@@ -1,0 +1,186 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+/* Main colors */
+/* Util colors */
+/* Text colors */
+/* Shadow */
+/* Body website */
+body {
+  margin: auto;
+  font-family: "roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Header */
+.logo {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  border: solid white 4px;
+  box-shadow: 0px 2px 5px #999;
+}
+.logo img {
+  width: 40%;
+  padding: 12px 10px 5px 10px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EAEAEA;
+  width: auto;
+  padding: 15px;
+}
+.location i {
+  margin-right: 15px;
+  padding-bottom: 5px;
+  font-size: 0.8rem;
+}
+.location p {
+  width: 30%;
+  font-size: 0.9rem;
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 280px;
+  background-color: #F6F6F6;
+  text-align: center;
+  padding: 30px;
+}
+.explore h1 {
+  font-weight: bold;
+  width: 90%;
+  margin: 10px 0px;
+  font-size: 1.5rem;
+}
+.explore p {
+  margin: 5px 0px 15px 0px;
+  width: auto;
+  font-size: 1.1rem;
+  opacity: 50%;
+}
+
+#orders {
+  height: 400px;
+}
+#orders h2 {
+  font-weight: bold;
+  width: 70%;
+  margin: 0px;
+  padding: 40px 15px;
+  padding-bottom: 5px;
+  font-size: 1.4rem;
+}
+#orders ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#orders ul li {
+  font-size: 16px;
+  width: 85%;
+  border: 1px solid #F6F6F6;
+  border-radius: 15px;
+  padding: 25px;
+  background: #F6F6F6;
+  margin: 10px;
+  box-shadow: 0px 2px 5px #999;
+}
+
+.restaurant_cards {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  height: 1000px;
+}
+.restaurant_cards h2 {
+  font-weight: bold;
+  width: 70%;
+  margin: 0px;
+  padding: 40px 15px;
+  padding-bottom: 5px;
+  font-size: 1.4rem;
+}
+.restaurant_cards .cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.restaurant_cards .cards .restaurant {
+  width: auto;
+  height: 40%;
+  min-height: 240px;
+  margin: 15px 20px 5px 20px;
+  align-items: center;
+  background-color: white;
+  border: solid white 4px;
+  border-radius: 20px;
+  box-shadow: 0px 2px 5px #999;
+  overflow: hidden;
+  transition: transform 0.4s;
+}
+
+/* Button */
+.btn {
+  padding: 16px;
+  border-radius: 30px;
+  border: none;
+  margin: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 0px 2px 5px #999;
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+
+/* Footer */
+
+/*# sourceMappingURL=style.css.map */

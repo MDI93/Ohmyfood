@@ -1,0 +1,12 @@
+/* Button */
+
+.btn{
+    padding: 16px;
+    border-radius: 30px;        
+    border: none;
+    margin: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    box-shadow: $shadow;
+    background: linear-gradient($color-secondary, $color-primary);
+}

@@ -1,0 +1,23 @@
+@mixin second_title{
+    font-weight: bold;
+    width: 70%;
+    margin: 0px;
+    padding: 40px 15px;
+    padding-bottom: 5px;
+    font-size: 1.4rem;
+}
+
+@mixin cards{
+    width: auto;
+    height: 40%;
+    min-height: 240px;
+    margin: 15px 20px 5px 20px;
+    align-items: center;
+    background-color: white;
+    border: solid white 4px;
+    border-radius: 20px;
+    box-shadow: $shadow;
+    overflow: hidden;
+    transition:transform .4s;
+    }
+
