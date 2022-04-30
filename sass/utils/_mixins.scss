@@ -7,17 +7,41 @@
     font-size: 1.4rem;
 }
 
+@mixin theme-colors($light-theme: true) {
+    @if $light-theme {
+      background-color: $dark-background;
+      color: $dark-text;
+    } @else {
+      background-color: $light-background;
+      color: $light-text;
+    }
+  }
+
 @mixin cards{
     width: auto;
-    height: 40%;
-    min-height: 240px;
+    height: 230px;
     margin: 15px 20px 5px 20px;
     align-items: center;
-    background-color: white;
-    border: solid white 4px;
     border-radius: 20px;
+    background-color: $color-cards;
     box-shadow: $shadow;
     overflow: hidden;
     transition:transform .4s;
+    position: relative;
     }
 
+@mixin cards_image {
+    width: 100%;
+	min-height: 240px;
+	border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+@mixin cards_text {
+	height: 12%;
+	width: 100%;
+  	margin-top: 0px;
+  	position: absolute;
+    padding-bottom: 10px;
+  	bottom: 0px;
+}
