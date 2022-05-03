@@ -53,24 +53,54 @@
         opacity: 50%;
     }
 }
-#orders{
+#choose_your_food{
     height: 400px;
     h2{
         @include second_title;
+        margin-bottom: 15px;
     }
-    ul {
+    .orders {
         display: flex;
         flex-direction: column;
         align-items: center;
-        li{
+        .order {
+            display: flex;
             font-size: 16px;
             width: 85%;
+            padding: 20px 0px;
             border: 1px solid $color-background2;
-            border-radius: 15px;
-            padding: 25px;
+            border-radius: 20px;
             background: $color-background2;
-            margin: 10px;
+            margin: 12px;
+            align-items: center;
+            justify-content:flex-start;
             box-shadow: $shadow;
+            overflow: hidden;
+  	        transition:transform .4s;
+                p {
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    float: inline-start;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid $color-primary;
+                    border-radius: 30px 30px;
+                    background: $color-primary;
+                }
+                i {
+                    font-size: 20px;
+                    margin-right: 20px;
+                    opacity: 50%;
+                    &:hover {
+                        color: $color-primary;
+                    }
+                }
+                &:hover {
+                    cursor: pointer;
+  	                transform: scale(1.08);
+                    background-color: lighten($color: $color-primary, $amount: 35);
+                }
         }
     }
 }
@@ -82,18 +112,45 @@
     h2{
         @include second_title
     }
+    a:visited {
+        @include theme-colors;
+    }
     .cards{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        overflow: hidden;
+  	    transition:transform .4s;
         .restaurant{
             @include cards;
+            &:hover {
+                cursor: pointer;
+  	            transform: scale(1.08);
+            }
         }
-        .restaurant img{
-            @include cards_image;
+        &.picture_card1, &.picture_card3, &.picture_card4 {
+            @include cards_img_horizontal;
+        }
+        &.picture_card2 {
+            @include cards_img_vertical;
         }
         .restaurant_text {
             @include cards_text;
+            padding: 15px 10px;
+            h3 {
+                @include third_title;
+                width: 50%;
+            }
+            p {
+                margin: 5px 0px;
+                opacity: 50%;
+                font-size: 1.1rem;
+                width: 50%;
+            }
+            .heart {
+                width: 10%;
+                color: black;
+            }
         }
     }
     }

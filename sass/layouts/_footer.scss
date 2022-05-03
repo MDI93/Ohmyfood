@@ -2,5 +2,34 @@
 
 footer {
     background: $color-footer;
-    height: 200px;
+    height: auto;
+    padding: 25px 20px;
+        img {
+            width: 30%;
+            margin-bottom: 15px;
+        }
+        a:visited {
+            @include theme-colors;
+        }
+        .link_restaurant {
+            display: flex;
+            margin-bottom: 10px;
+            i {
+                width: 5%;
+                margin-right: 10px;
+                @include theme-colors;
+            }
+        }
+        .link_partner {
+            display: flex;
+            margin-bottom: 10px;
+            i {
+                width: 5%;
+                margin-right: 10px;
+                @include theme-colors;
+            }
+        } 
+        .link_notice, .link_contact {
+            margin-bottom: 10px;
+        }   
 }
