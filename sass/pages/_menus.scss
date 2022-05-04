@@ -1,0 +1,14 @@
+/* Header */
+
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid white;
+    box-shadow: $shadow;
+    padding: 18px 0px 12px 0px;
+    img{
+        width: 45%;
+        height: 28px;
+    }
+}
