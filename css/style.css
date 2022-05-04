@@ -143,15 +143,16 @@ body a {
   z-index: 1;
 }
 #choose_your_food .orders .order span {
-  font-size: 12px;
+  font-size: 13px;
   color: white;
   width: 25px;
   height: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: -10px;
+  margin-left: -12px;
   margin-right: 20px;
+  padding-top: 3px;
   border: 1px solid #9356DC;
   border-radius: 25px 25px;
   background: #9356DC;
@@ -163,7 +164,7 @@ body a {
   opacity: 50%;
 }
 #choose_your_food .orders .order i:hover {
-  color: black;
+  color: #9356DC;
 }
 #choose_your_food .orders .order:hover {
   cursor: pointer;
@@ -185,14 +186,10 @@ body a {
   padding-bottom: 5px;
   font-size: 1.4rem;
 }
-.restaurant_cards a:visited {
-  color: white;
-}
 .restaurant_cards .cards {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: hidden;
   transition: transform 0.4s;
 }
 .restaurant_cards .cards .restaurant {
@@ -228,32 +225,34 @@ body a {
   object-position: 60% 100%;
 }
 .restaurant_cards .cards .restaurant_text {
+  display: flex;
+  justify-content: space-between;
   height: 30%;
   width: 100%;
   color: black;
   background: #F6F6F6;
   margin-top: 0px;
   position: absolute;
-  padding-bottom: 10px;
   bottom: 0px;
   padding: 15px 10px;
 }
-.restaurant_cards .cards .restaurant_text h3 {
+.restaurant_cards .cards .restaurant_text .text h3 {
   font-weight: bold;
-  width: 70%;
   margin: 0px;
   font-size: 1.1rem;
-  width: 50%;
 }
-.restaurant_cards .cards .restaurant_text p {
+.restaurant_cards .cards .restaurant_text .text p {
   margin: 5px 0px;
   opacity: 50%;
   font-size: 1.1rem;
-  width: 50%;
 }
 .restaurant_cards .cards .restaurant_text .heart {
-  width: 10%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
   color: black;
+  width: 20px;
+  height: 20px;
 }
 
 /* Button */
@@ -279,8 +278,12 @@ footer {
   padding: 25px 20px;
 }
 footer img {
+  color: white;
   width: 30%;
   margin-bottom: 15px;
+}
+footer a {
+  color: white;
 }
 footer a:visited {
   color: white;

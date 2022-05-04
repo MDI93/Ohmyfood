@@ -10,7 +10,6 @@
 }
 @mixin third_title {
     font-weight: bold;
-    width: 70%;
     margin: 0px;
     font-size: 1.1rem;
 }
@@ -55,6 +54,5 @@
   background: $color-background2;
 	margin-top: 0px;
 	position: absolute;
-  padding-bottom: 10px;
 	bottom: 0px;
 }

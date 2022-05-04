@@ -5,8 +5,12 @@ footer {
     height: auto;
     padding: 25px 20px;
         img {
+            color: $light-text;
             width: 30%;
             margin-bottom: 15px;
+        }
+        a {
+            color: $light-text;
         }
         a:visited {
             color: $light-text;

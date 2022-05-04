@@ -78,15 +78,16 @@
   	        transition:transform .4s;
             z-index: 1;
                 span {
-                    font-size: 12px;
+                    font-size: 13px;
                     color: $light-text;
                     width: 25px;
                     height: 25px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    margin-left: -10px;
+                    margin-left: -12px;
                     margin-right: 20px;
+                    padding-top: 3px;
                     border: 1px solid $color-primary;
                     border-radius: 25px 25px;
                     background: $color-primary;
@@ -97,7 +98,7 @@
                     margin-right: 20px;
                     opacity: 50%;
                     &:hover {
-                        color: darken($color: $color-primary, $amount: 60);
+                        color: $color-primary;
                     }
                 }
                 &:hover {
@@ -116,15 +117,11 @@
     h2{
         @include second_title
     }
-    a:visited {
-        color: $light-text;
-    }
     .cards{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        overflow: hidden;
-  	    transition:transform .4s;
+  	    transition: transform .4s;
         .restaurant{
             @include cards;
             &:hover {
@@ -139,22 +136,28 @@
             }
         }
         .restaurant_text {
+            display: flex;
+            justify-content: space-between;
             @include cards_text;
             padding: 15px 10px;
-            h3 {
-                @include third_title;
-                width: 50%;
-            }
-            p {
-                margin: 5px 0px;
-                opacity: 50%;
-                font-size: 1.1rem;
-                width: 50%;
-            }
-            .heart {
-                width: 10%;
-                color: black;
-            }
+                .text {
+                    h3 {
+                    @include third_title;
+                    }
+                    p {
+                    margin: 5px 0px;
+                    opacity: 50%;
+                    font-size: 1.1rem;
+                    }
+                }
+                .heart {
+                    display: flex; 
+                    justify-items: center;
+                    align-items: center;
+                    color: black;
+                    width: 20px;
+                    height: 20px;
+                }
         }
     }
 }
