@@ -9,7 +9,7 @@ footer {
             margin-bottom: 15px;
         }
         a:visited {
-            @include theme-colors;
+            color: $light-text;
         }
         .link_restaurant {
             display: flex;
@@ -17,7 +17,7 @@ footer {
             i {
                 width: 5%;
                 margin-right: 10px;
-                @include theme-colors;
+                color: $light-text;
             }
         }
         .link_partner {
@@ -26,7 +26,7 @@ footer {
             i {
                 width: 5%;
                 margin-right: 10px;
-                @include theme-colors;
+                color: $light-text;
             }
         } 
         .link_notice, .link_contact {

@@ -139,19 +139,23 @@ body a {
   align-items: center;
   justify-content: flex-start;
   box-shadow: 0px 2px 10px #999;
-  overflow: hidden;
   transition: transform 0.4s;
+  z-index: 1;
 }
-#choose_your_food .orders .order p {
-  width: 30px;
-  height: 30px;
+#choose_your_food .orders .order span {
+  font-size: 12px;
+  color: white;
+  width: 25px;
+  height: 25px;
   display: flex;
-  float: inline-start;
   justify-content: center;
   align-items: center;
+  margin-left: -10px;
+  margin-right: 20px;
   border: 1px solid #9356DC;
-  border-radius: 30px 30px;
+  border-radius: 25px 25px;
   background: #9356DC;
+  z-index: 2;
 }
 #choose_your_food .orders .order i {
   font-size: 20px;
@@ -159,7 +163,7 @@ body a {
   opacity: 50%;
 }
 #choose_your_food .orders .order i:hover {
-  color: #9356DC;
+  color: black;
 }
 #choose_your_food .orders .order:hover {
   cursor: pointer;
@@ -182,7 +186,6 @@ body a {
   font-size: 1.4rem;
 }
 .restaurant_cards a:visited {
-  background-color: #353535;
   color: white;
 }
 .restaurant_cards .cards {
@@ -208,20 +211,20 @@ body a {
   cursor: pointer;
   transform: scale(1.08);
 }
-.restaurant_cards .cards.picture_card1, .restaurant_cards .cards.picture_card3, .restaurant_cards .cards.picture_card4 {
-  width: 100%;
-  height: 260px;
+.restaurant_cards .cards .restaurant.picture_card1, .restaurant_cards .cards .restaurant.picture_card3, .restaurant_cards .cards .restaurant.picture_card4 {
+  width: auto;
+  height: 100%;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
   overflow: hidden;
-  object-position: 80% 100%;
+  object-position: 30% 100%;
 }
-.restaurant_cards .cards.picture_card2 {
+.restaurant_cards .cards .restaurant.picture_card2 {
   width: 100%;
   height: 260px;
   border-radius: 15px 15px 0 0;
-  object-fit: cover;
   overflow: hidden;
+  object-fit: cover;
   object-position: 60% 100%;
 }
 .restaurant_cards .cards .restaurant_text {
@@ -263,7 +266,6 @@ body a {
   font-weight: 550;
   box-shadow: 0px 2px 10px #999;
   background: linear-gradient(#FF79DA, #9356DC);
-  background-color: #353535;
   color: white;
 }
 .btn:active {
@@ -281,7 +283,6 @@ footer img {
   margin-bottom: 15px;
 }
 footer a:visited {
-  background-color: #353535;
   color: white;
 }
 footer .link_restaurant {
@@ -291,7 +292,6 @@ footer .link_restaurant {
 footer .link_restaurant i {
   width: 5%;
   margin-right: 10px;
-  background-color: #353535;
   color: white;
 }
 footer .link_partner {
@@ -301,7 +301,6 @@ footer .link_partner {
 footer .link_partner i {
   width: 5%;
   margin-right: 10px;
-  background-color: #353535;
   color: white;
 }
 footer .link_notice, footer .link_contact {

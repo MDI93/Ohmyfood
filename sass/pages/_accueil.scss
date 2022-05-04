@@ -75,25 +75,29 @@
             align-items: center;
             justify-content:flex-start;
             box-shadow: $shadow;
-            overflow: hidden;
   	        transition:transform .4s;
-                p {
-                    width: 30px;
-                    height: 30px;
+            z-index: 1;
+                span {
+                    font-size: 12px;
+                    color: $light-text;
+                    width: 25px;
+                    height: 25px;
                     display: flex;
-                    float: inline-start;
                     justify-content: center;
                     align-items: center;
+                    margin-left: -10px;
+                    margin-right: 20px;
                     border: 1px solid $color-primary;
-                    border-radius: 30px 30px;
+                    border-radius: 25px 25px;
                     background: $color-primary;
+                    z-index: 2;
                 }
                 i {
                     font-size: 20px;
                     margin-right: 20px;
                     opacity: 50%;
                     &:hover {
-                        color: $color-primary;
+                        color: darken($color: $color-primary, $amount: 60);
                     }
                 }
                 &:hover {
@@ -113,7 +117,7 @@
         @include second_title
     }
     a:visited {
-        @include theme-colors;
+        color: $light-text;
     }
     .cards{
         display: flex;
@@ -127,12 +131,12 @@
                 cursor: pointer;
   	            transform: scale(1.08);
             }
-        }
-        &.picture_card1, &.picture_card3, &.picture_card4 {
-            @include cards_img_horizontal;
-        }
-        &.picture_card2 {
-            @include cards_img_vertical;
+            &.picture_card1, &.picture_card3, &.picture_card4 {
+                @include cards_img_horizontal;
+             }
+            &.picture_card2 {
+                @include cards_img_vertical;
+            }
         }
         .restaurant_text {
             @include cards_text;
@@ -153,4 +157,4 @@
             }
         }
     }
-    }
+}
