@@ -53,6 +53,9 @@
         opacity: 50%;
     }
 }
+
+/* Select your place and food */
+
 #choose_your_food{
     height: 400px;
     h2{
@@ -109,6 +112,9 @@
         }
     }
 }
+
+/* Cards of place */
+
 .restaurant_cards{
     display: flex;
     flex-direction: column;
@@ -121,20 +127,29 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-  	    transition: transform .4s;
+  	    transition: transform .4s; 
         .restaurant{
             @include cards;
+            .picture_card1, .picture_card3, .picture_card4 {
+                @include cards_img_horizontal;
+             }
+            .picture_card2 {
+                @include cards_img_vertical;
+            }
             &:hover {
                 cursor: pointer;
   	            transform: scale(1.08);
-            }
-            &.picture_card1, &.picture_card3, &.picture_card4 {
-                @include cards_img_horizontal;
-             }
-            &.picture_card2 {
-                @include cards_img_vertical;
-            }
+            }      
         }
+        .new {
+            float: right;
+            color: darken($color: $color-tertiary, $amount: 40);
+            background-color: $color-tertiary;
+            padding: 7px;
+            font-size: 0.7rem; 
+            margin: 10px;
+            position: absolute;
+        } 
         .restaurant_text {
             display: flex;
             justify-content: space-between;
@@ -152,11 +167,11 @@
                 }
                 .heart {
                     display: flex; 
-                    justify-items: center;
-                    align-items: center;
                     color: black;
-                    width: 20px;
-                    height: 20px;
+                    width: auto;
+                    height: 30px;
+                    font-size: 25px;
+                    padding-right: 10px;
                 }
         }
     }
