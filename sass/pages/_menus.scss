@@ -1,14 +1,89 @@
-/* Header */
+/* Header Menus */
 
 .logo {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: auto;
     border: 1px solid white;
     box-shadow: $shadow;
     padding: 18px 0px 12px 0px;
+    .back {
+        width: auto;
+        height: 30px;
+        font-size: 20px;
+    }
     img{
-        width: 45%;
-        height: 28px;
+        width: 80%;
+        padding: 0 50px;
+        margin-left: 5px;
+        height: 25px;
+    }
+}
+
+/* Menus */
+
+.menus {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    border-radius: 10px 10px;
+    background-color: $color-background2;
+    .restaurant_name {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        h1 {
+            @include first_title;
+            width: 70%;
+            margin-top: 20px;
+        }
+        .heart {
+            @include heart;
+            i {
+                font-size: 20px;
+            }
+            
+        }
+    }
+    .menu_starter, .menu_main_course, .menu_dessert {
+        h2 {
+            @include second_title;
+            font-weight: 300;
+            padding-top: 10px;
+            padding-left: 0;
+            font-size: 1.2rem;
+            margin-left: 15px;
+            @include border-btm;
+        }
+        .starter, .main_course, .dessert {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+            width: auto;
+            padding: 15px 0px;
+            margin: 15px;
+            border: 1px solid $color-background2;
+            border-radius: 20px;
+            background: $color-background2;
+            justify-content:flex-start;
+            box-shadow: $shadow;
+            .starter_text, .main_course_text, .dessert_text {
+                padding-left: 10px;
+                h3 {
+                    @include third_title;
+                    font-weight: 500;
+                    margin-bottom: 5px;
+                }
+                p {
+                    opacity: 60%;
+                }
+            }
+            .price {
+                font-weight: 500;
+            }
+        }
     }
 }

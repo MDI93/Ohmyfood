@@ -40,11 +40,9 @@
     height: 280px;
     background-color: $color-background2;
     padding: 30px;
-    h1{
-        font-weight: 550;
-        width: 90%;
-        margin: 10px 0px;
-        font-size: 1.5rem;
+    h1 {
+        @include first_title;
+        font-family: "roboto", sans serif;
     }
     p{
         margin: 5px 0px 15px 0px;
@@ -166,13 +164,8 @@
                     }
                 }
                 .heart {
-                    display: flex; 
-                    color: black;
-                    width: auto;
-                    height: 30px;
-                    font-size: 25px;
-                    padding-right: 10px;
+                @include heart;
                 }
         }
     }
-}
+}    

@@ -99,9 +99,11 @@ body a {
 }
 .explore h1 {
   font-weight: 550;
-  width: 90%;
-  margin: 10px 0px;
+  width: 85%;
+  margin: 10px 15px;
   font-size: 1.5rem;
+  font-family: "Shrikhand", cursive;
+  font-family: "roboto", sans serif;
 }
 .explore p {
   margin: 5px 0px 15px 0px;
@@ -259,11 +261,119 @@ body a {
 }
 .restaurant_cards .cards .restaurant_text .heart {
   display: flex;
+  align-items: center;
+  justify-items: center;
   color: black;
-  width: auto;
+  width: 30px;
   height: 30px;
   font-size: 25px;
   padding-right: 10px;
+  margin-right: 5px;
+}
+
+/* Header Menus */
+.logo {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  border: 1px solid white;
+  box-shadow: 0px 2px 10px #999;
+  padding: 18px 0px 12px 0px;
+}
+.logo .back {
+  width: auto;
+  height: 30px;
+  font-size: 20px;
+}
+.logo img {
+  width: 80%;
+  padding: 0 50px;
+  margin-left: 5px;
+  height: 25px;
+}
+
+/* Menus */
+.menus {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  border-radius: 10px 10px;
+  background-color: #F6F6F6;
+}
+.menus .restaurant_name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.menus .restaurant_name h1 {
+  font-weight: 550;
+  width: 85%;
+  margin: 10px 15px;
+  font-size: 1.5rem;
+  font-family: "Shrikhand", cursive;
+  width: 70%;
+  margin-top: 20px;
+}
+.menus .restaurant_name .heart {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  color: black;
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  padding-right: 10px;
+  margin-right: 5px;
+}
+.menus .restaurant_name .heart i {
+  font-size: 20px;
+}
+.menus .menu_starter h2, .menus .menu_main_course h2, .menus .menu_dessert h2 {
+  font-weight: bold;
+  width: 70%;
+  margin: 0px;
+  padding: 40px 20px;
+  padding-bottom: 5px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding-top: 10px;
+  padding-left: 0;
+  font-size: 1.2rem;
+  margin-left: 15px;
+  width: 45px;
+  border-bottom: solid #99E2D0;
+}
+.menus .menu_starter .starter, .menus .menu_starter .main_course, .menus .menu_starter .dessert, .menus .menu_main_course .starter, .menus .menu_main_course .main_course, .menus .menu_main_course .dessert, .menus .menu_dessert .starter, .menus .menu_dessert .main_course, .menus .menu_dessert .dessert {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  width: auto;
+  padding: 15px 0px;
+  margin: 15px;
+  border: 1px solid #F6F6F6;
+  border-radius: 20px;
+  background: #F6F6F6;
+  justify-content: flex-start;
+  box-shadow: 0px 2px 10px #999;
+}
+.menus .menu_starter .starter .starter_text, .menus .menu_starter .starter .main_course_text, .menus .menu_starter .starter .dessert_text, .menus .menu_starter .main_course .starter_text, .menus .menu_starter .main_course .main_course_text, .menus .menu_starter .main_course .dessert_text, .menus .menu_starter .dessert .starter_text, .menus .menu_starter .dessert .main_course_text, .menus .menu_starter .dessert .dessert_text, .menus .menu_main_course .starter .starter_text, .menus .menu_main_course .starter .main_course_text, .menus .menu_main_course .starter .dessert_text, .menus .menu_main_course .main_course .starter_text, .menus .menu_main_course .main_course .main_course_text, .menus .menu_main_course .main_course .dessert_text, .menus .menu_main_course .dessert .starter_text, .menus .menu_main_course .dessert .main_course_text, .menus .menu_main_course .dessert .dessert_text, .menus .menu_dessert .starter .starter_text, .menus .menu_dessert .starter .main_course_text, .menus .menu_dessert .starter .dessert_text, .menus .menu_dessert .main_course .starter_text, .menus .menu_dessert .main_course .main_course_text, .menus .menu_dessert .main_course .dessert_text, .menus .menu_dessert .dessert .starter_text, .menus .menu_dessert .dessert .main_course_text, .menus .menu_dessert .dessert .dessert_text {
+  padding-left: 10px;
+}
+.menus .menu_starter .starter .starter_text h3, .menus .menu_starter .starter .main_course_text h3, .menus .menu_starter .starter .dessert_text h3, .menus .menu_starter .main_course .starter_text h3, .menus .menu_starter .main_course .main_course_text h3, .menus .menu_starter .main_course .dessert_text h3, .menus .menu_starter .dessert .starter_text h3, .menus .menu_starter .dessert .main_course_text h3, .menus .menu_starter .dessert .dessert_text h3, .menus .menu_main_course .starter .starter_text h3, .menus .menu_main_course .starter .main_course_text h3, .menus .menu_main_course .starter .dessert_text h3, .menus .menu_main_course .main_course .starter_text h3, .menus .menu_main_course .main_course .main_course_text h3, .menus .menu_main_course .main_course .dessert_text h3, .menus .menu_main_course .dessert .starter_text h3, .menus .menu_main_course .dessert .main_course_text h3, .menus .menu_main_course .dessert .dessert_text h3, .menus .menu_dessert .starter .starter_text h3, .menus .menu_dessert .starter .main_course_text h3, .menus .menu_dessert .starter .dessert_text h3, .menus .menu_dessert .main_course .starter_text h3, .menus .menu_dessert .main_course .main_course_text h3, .menus .menu_dessert .main_course .dessert_text h3, .menus .menu_dessert .dessert .starter_text h3, .menus .menu_dessert .dessert .main_course_text h3, .menus .menu_dessert .dessert .dessert_text h3 {
+  font-weight: bold;
+  margin: 0px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.menus .menu_starter .starter .starter_text p, .menus .menu_starter .starter .main_course_text p, .menus .menu_starter .starter .dessert_text p, .menus .menu_starter .main_course .starter_text p, .menus .menu_starter .main_course .main_course_text p, .menus .menu_starter .main_course .dessert_text p, .menus .menu_starter .dessert .starter_text p, .menus .menu_starter .dessert .main_course_text p, .menus .menu_starter .dessert .dessert_text p, .menus .menu_main_course .starter .starter_text p, .menus .menu_main_course .starter .main_course_text p, .menus .menu_main_course .starter .dessert_text p, .menus .menu_main_course .main_course .starter_text p, .menus .menu_main_course .main_course .main_course_text p, .menus .menu_main_course .main_course .dessert_text p, .menus .menu_main_course .dessert .starter_text p, .menus .menu_main_course .dessert .main_course_text p, .menus .menu_main_course .dessert .dessert_text p, .menus .menu_dessert .starter .starter_text p, .menus .menu_dessert .starter .main_course_text p, .menus .menu_dessert .starter .dessert_text p, .menus .menu_dessert .main_course .starter_text p, .menus .menu_dessert .main_course .main_course_text p, .menus .menu_dessert .main_course .dessert_text p, .menus .menu_dessert .dessert .starter_text p, .menus .menu_dessert .dessert .main_course_text p, .menus .menu_dessert .dessert .dessert_text p {
+  opacity: 60%;
+}
+.menus .menu_starter .starter .price, .menus .menu_starter .main_course .price, .menus .menu_starter .dessert .price, .menus .menu_main_course .starter .price, .menus .menu_main_course .main_course .price, .menus .menu_main_course .dessert .price, .menus .menu_dessert .starter .price, .menus .menu_dessert .main_course .price, .menus .menu_dessert .dessert .price {
+  font-weight: 500;
 }
 
 /* Button */
