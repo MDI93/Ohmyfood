@@ -4,7 +4,8 @@ footer {
     background: $color-footer;
     height: auto;
     padding: 25px 20px;
-        img {
+        .footer_logo {
+            @include footer_title;
             color: $light-text;
             width: 30%;
             margin-bottom: 15px;

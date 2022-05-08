@@ -6,25 +6,30 @@
   font-size: 1.5rem;
   font-family: 'Shrikhand', cursive;
 }
- @mixin second_title {
-    font-weight: bold;
-    width: 70%;
-    margin: 0px;
-    padding: 40px 20px;
-    padding-bottom: 5px;
-    font-size: 1.4rem;
+@mixin second_title {
+  font-weight: bold;
+  width: 70%;
+  margin: 0px;
+  padding: 40px 20px;
+  padding-bottom: 5px;
+  font-size: 1.4rem;
 }
 @mixin third_title {
-    font-weight: bold;
-    margin: 0px;
-    font-size: 1.1rem;
+  font-weight: bold;    
+  margin: 0px;
+  font-size: 1.1rem;
+}
+@mixin footer_title {
+  width: 85%;
+  font-size: 1.2rem;
+  font-family: 'Shrikhand', cursive;
 }
 
 // Cards
 
 @mixin cards {
   width: auto;
-  height: 230px;
+  height: 250px;
   margin: 15px 20px 5px 20px;
   align-items: center;
   border-radius: 15px;
@@ -36,12 +41,12 @@
 }
 
 @mixin cards_img_horizontal {
-  width: 100%;
-	height: 260px;
+  width: auto;
+	height: 250px;
 	border-radius: 15px 15px 0 0;
   object-fit: cover;
   overflow: hidden;
-  object-position: 40% 100%;
+  object-position: 100% 80%;
 }
 
 @mixin cards_img_vertical {
@@ -72,7 +77,17 @@
     font-size: 25px;
     padding-right: 10px;
     margin-right: 5px;
-    
+}
+@mixin new {
+  float: inline-start;
+  font-weight: 500;
+  border-radius: 2px;
+  color: darken($color: $color-tertiary, $amount: 40);
+  background-color: $color-tertiary;
+  padding: 6px 10px; 
+  font-size: 0.8rem; 
+  margin: 10px;
+  position: absolute;
 }
 
 // Border
