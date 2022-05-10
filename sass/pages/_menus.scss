@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     width: auto;
-    border: 1px solid white;
     box-shadow: $shadow;
     padding: 18px 0px 12px 0px;
     .back {
@@ -13,7 +12,7 @@
         font-size: 20px;
     }
     img{
-        width: 80%;
+        width: 70%;
         padding: 0 50px;
         margin-left: 5px;
         height: 25px;
@@ -27,23 +26,23 @@
     flex-direction: column;
     width: auto;
     height: auto;
-    border-radius: 10px 10px;
     background-color: $color-background2;
-    &.btn
+    justify-content: center;
     .restaurant_name {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
         h1 {
             @include first_title;
             width: 70%;
             margin-top: 20px;
+            margin-left: 15px
         }
         .heart {
             @include heart;
             i {
-                font-size: 20px;
+                font-size: 30px;
+                width: 20%;
             }
             
         }
@@ -54,7 +53,7 @@
             font-weight: 300;
             padding-top: 10px;
             padding-left: 0;
-            font-size: 1.2rem;
+            font-size: 1.0rem;
             margin-left: 15px;
             @include border-btm;
         }
@@ -64,6 +63,7 @@
             align-items: center;
             font-size: 16px;
             width: auto;
+            min-width: max-content;
             padding: 15px 0px;
             margin: 15px;
             border: 1px solid $color-background2;
@@ -73,18 +73,39 @@
             box-shadow: $shadow;
             .starter_text, .main_course_text, .dessert_text {
                 padding-left: 10px;
+                min-width: 90%;
                 h3 {
                     @include third_title;
                     font-weight: 500;
                     margin-bottom: 5px;
                 }
                 p {
+                    width: 90%;
+                    font-size: 15px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
                     opacity: 60%;
                 }
             }
             .price {
+                font-size: 15px;
                 font-weight: 500;
+                padding-top: 25px;
+                margin-left: -10px;
             }
         }
+    }
+}
+form {
+    display: flex;
+    background: $color-background2;
+    justify-content: center;
+    align-content: center;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    &.btn {
+        font-size: 12px;
+        padding: 12px 40px;
     }
 }
