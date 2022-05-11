@@ -103,7 +103,6 @@ body a {
   width: 85%;
   margin: 10px 15px;
   font-size: 1.5rem;
-  font-family: "Shrikhand", cursive;
   font-family: "roboto", sans serif;
 }
 .explore p {
@@ -167,14 +166,14 @@ body a {
   margin-right: 20px;
   opacity: 50%;
 }
-#choose_your_food .orders .order i:hover {
-  color: #9356DC;
-  opacity: 160%;
-}
 #choose_your_food .orders .order:hover {
   cursor: pointer;
   transform: scale(1.08);
   background-color: #f2eafb;
+}
+#choose_your_food .orders .order:hover i {
+  color: #9356DC;
+  opacity: 160%;
 }
 
 /* Cards of place */
@@ -182,7 +181,7 @@ body a {
   display: flex;
   flex-direction: column;
   background-color: #F6F6F6;
-  height: 1220px;
+  height: 1130px;
 }
 .restaurant_cards h2 {
   font-weight: bold;
@@ -196,11 +195,10 @@ body a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: transform 0.4s;
 }
 .restaurant_cards .cards .restaurant {
   width: auto;
-  height: 250px;
+  height: 230px;
   margin: 15px 20px 5px 20px;
   align-items: center;
   border-radius: 15px;
@@ -210,28 +208,26 @@ body a {
   transition: transform 0.4s;
   position: relative;
 }
-.restaurant_cards .cards .restaurant .picture_card1, .restaurant_cards .cards .restaurant .picture_card3, .restaurant_cards .cards .restaurant .picture_card4 {
+.restaurant_cards .cards .restaurant .restaurant_picture .__picture1, .restaurant_cards .cards .restaurant .restaurant_picture .__picture3, .restaurant_cards .cards .restaurant .restaurant_picture .__picture4 {
   width: 100%;
-  height: 250px;
+  height: 165px;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
-  overflow: hidden;
-  object-position: 50% 50%;
+  object-position: 100% 90%;
 }
-.restaurant_cards .cards .restaurant .picture_card2 {
+.restaurant_cards .cards .restaurant .restaurant_picture .__picture2 {
   width: 100%;
-  height: 260px;
+  height: 200px;
   border-radius: 15px 15px 0 0;
   overflow: hidden;
   object-fit: cover;
-  object-position: 80% 100%;
+  object-position: 80% 70%;
 }
 .restaurant_cards .cards .restaurant:hover {
   cursor: pointer;
   transform: scale(1.08);
 }
 .restaurant_cards .cards .new {
-  float: right;
   width: 24%;
   align-items: center;
   font-weight: 500;
@@ -240,13 +236,13 @@ body a {
   background-color: #99E2D0;
   padding: 6px 13px;
   font-size: 0.9rem;
-  margin: 10px;
+  margin: 12px 17px 0 245px;
   position: absolute;
 }
 .restaurant_cards .cards .restaurant_text {
   display: flex;
   justify-content: space-between;
-  height: 30%;
+  height: 29%;
   width: 100%;
   color: black;
   background: #F6F6F6;
@@ -278,6 +274,17 @@ body a {
   margin-right: 5px;
 }
 
+/* Responsive Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .logo {
+    padding: 18px 0px 12px 0px;
+  }
+  .logo img {
+    width: 40%;
+    height: 20px;
+  }
+}
+/* Responsive Desktop */
 /* Header Menus */
 .logo {
   display: flex;
@@ -298,14 +305,28 @@ body a {
   height: 25px;
 }
 
+.picture_restaurant {
+  height: 200px;
+}
+.picture_restaurant .picture_plate {
+  width: 100%;
+  height: 25Opx;
+  overflow: hidden;
+  position: relative;
+  object-position: 100% 80%;
+}
+
 /* Menus */
 .menus {
   display: flex;
   flex-direction: column;
-  width: auto;
+  width: 100%;
   height: auto;
+  margin-top: -10px;
+  border-radius: 30px 30px 0 0;
   background-color: #F6F6F6;
   justify-content: center;
+  position: absolute;
 }
 .menus .restaurant_name {
   display: flex;
@@ -315,12 +336,10 @@ body a {
 .menus .restaurant_name h1 {
   font-weight: 550;
   width: 85%;
-  margin: 10px 15px;
+  margin: 20px 15px;
   font-size: 1.5rem;
   font-family: "Shrikhand", cursive;
   width: 70%;
-  margin-top: 20px;
-  margin-left: 15px;
 }
 .menus .restaurant_name .heart {
   display: flex;
@@ -401,11 +420,13 @@ form {
   padding-top: 5px;
   padding-bottom: 30px;
 }
-form.btn {
+form .btn--menu {
   font-size: 12px;
   padding: 12px 40px;
 }
 
+/* Responsive Tablet */
+/* Responsive Desktop */
 /* Button */
 .btn {
   padding: 16px 18px;
