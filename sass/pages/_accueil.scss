@@ -17,6 +17,7 @@
     justify-content: center;
     background-color: $color-background;
     width: 100%;
+    height: auto;
     padding: 15px;
     box-shadow: inset 1px 2px 3px rgba(153, 153, 153, 1);
     i{
@@ -37,12 +38,13 @@
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 300px;
+    height: auto;
     background-color: $color-background2;
     padding: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
     h1 {
         @include first_title;
+        margin: 10px 15px;
         font-family: "roboto", sans serif;
     }
     p{
@@ -168,16 +170,3 @@
     }
 }    
 
-/* Responsive Tablet */
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    .logo {
-        padding: 18px 0px 12px 0px;
-        img{
-            width: 40%;
-            height: 20px;
-        }
-    }
-}
-
-/* Responsive Desktop */

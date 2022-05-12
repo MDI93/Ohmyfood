@@ -1,0 +1,92 @@
+/* Responsive Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .logo {
+        img{
+            width: 40%;
+            height: 28px;
+        }
+    }
+    .location {
+        i{
+            width: 5%;
+        }
+        p{
+            width: 20%;
+        }
+    }
+    .explore{
+        padding: 30px;
+        padding-bottom: 5px;
+    }
+    #choose_your_food{
+        height: auto;
+        padding-bottom: 40px;
+        .orders {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .order {
+                    span {
+                        margin-right: 12px;
+                    }
+                    i {
+                        font-size: 18px;
+                        margin-right: 12px;
+                    }
+            }
+        }
+    }
+    .restaurant_cards{
+        display: flex;
+        flex-direction: column;
+        background-color: $color-background2;
+        height: auto;
+        padding-bottom: 40px;
+        .cards{
+            align-items: center;
+            .restaurant{
+                    width: 70%;
+                    height: 300px;
+                .restaurant_picture {
+                    .__picture1, .__picture3, .__picture4 {
+                        height: auto;
+                    }
+                    .__picture2 {
+                        height: auto;
+                    }
+                }
+                &:hover {
+                    cursor: pointer;
+                      transform: scale(1.08);
+                }      
+            }
+            .new {
+                @include new;
+            } 
+            .restaurant_text {
+                display: flex;
+                justify-content: space-between;
+                @include cards_text;
+                padding: 15px 15px;
+                    .text {
+                        h3 {
+                        @include third_title;
+                        }
+                        p {
+                        margin: 5px 0px;
+                        padding-bottom: 5px;
+                        font-weight: 300;
+                        font-size: 1rem;
+                        }
+                    }
+                    .heart {
+                    @include heart;
+                    }
+            }
+        }
+    }
+}
+
+
+/* Responsive Desktop */

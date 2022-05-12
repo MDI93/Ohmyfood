@@ -18,30 +18,45 @@
         height: 25px;
     }
 }
+.picture_restaurant {
+    height: 200px;
+    .picture_plate {
+        width: 100%;
+        height: 25Opx;
+        overflow: hidden;
+        position:relative;
+        object-position: 100% 80%;
+    }
+}
 
 /* Menus */
 
 .menus {
     display: flex;
     flex-direction: column;
-    width: auto;
+    width: 100%;
     height: auto;
+    margin-top: -10px;
+    border-radius: 30px 30px 0 0;
     background-color: $color-background2;
     justify-content: center;
+    position: absolute;
     .restaurant_name {
         display: flex;
         flex-direction: row;
         align-items: center;
         h1 {
-            @include first_title;
+            font-weight: 550;
+            width: 100%;
+            font-size: 1.8rem;
+            margin: 25px 20px 20px 15px;
+            font-family: 'Shrikhand', cursive;
             width: 70%;
-            margin-top: 20px;
-            margin-left: 15px
         }
         .heart {
             @include heart;
             i {
-                font-size: 30px;
+                font-size: 25px;
                 width: 20%;
             }
             
@@ -95,8 +110,9 @@
                 margin-left: -10px;
             }
         }
-    }
+    }   
 }
+
 form {
     display: flex;
     background: $color-background2;
@@ -104,8 +120,11 @@ form {
     align-content: center;
     padding-top: 5px;
     padding-bottom: 30px;
-    &.btn {
+    .btn--menu {
         font-size: 12px;
         padding: 12px 40px;
     }
 }
+
+/* Responsive Tablet */
+/* Responsive Desktop */

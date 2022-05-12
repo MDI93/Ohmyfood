@@ -72,6 +72,7 @@ body a {
   justify-content: center;
   background-color: #EAEAEA;
   width: 100%;
+  height: auto;
   padding: 15px;
   box-shadow: inset 1px 2px 3px rgb(153, 153, 153);
 }
@@ -93,16 +94,16 @@ body a {
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 300px;
+  height: auto;
   background-color: #F6F6F6;
   padding: 30px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 .explore h1 {
   font-weight: 550;
   width: 85%;
-  margin: 10px 15px;
   font-size: 1.5rem;
+  margin: 10px 15px;
   font-family: "roboto", sans serif;
 }
 .explore p {
@@ -274,17 +275,6 @@ body a {
   margin-right: 5px;
 }
 
-/* Responsive Tablet */
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .logo {
-    padding: 18px 0px 12px 0px;
-  }
-  .logo img {
-    width: 40%;
-    height: 20px;
-  }
-}
-/* Responsive Desktop */
 /* Header Menus */
 .logo {
   display: flex;
@@ -335,9 +325,9 @@ body a {
 }
 .menus .restaurant_name h1 {
   font-weight: 550;
-  width: 85%;
-  margin: 20px 15px;
-  font-size: 1.5rem;
+  width: 100%;
+  font-size: 1.8rem;
+  margin: 25px 20px 20px 15px;
   font-family: "Shrikhand", cursive;
   width: 70%;
 }
@@ -353,7 +343,7 @@ body a {
   margin-right: 5px;
 }
 .menus .restaurant_name .heart i {
-  font-size: 30px;
+  font-size: 25px;
   width: 20%;
 }
 .menus .menu_starter h2, .menus .menu_main_course h2, .menus .menu_dessert h2 {
@@ -489,5 +479,114 @@ footer .link_partner i {
 footer .link_notice, footer .link_contact {
   margin-bottom: 10px;
 }
+
+/* Responsive Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .logo img {
+    width: 40%;
+    height: 28px;
+  }
+
+  .location i {
+    width: 5%;
+  }
+  .location p {
+    width: 20%;
+  }
+
+  .explore {
+    padding: 30px;
+    padding-bottom: 5px;
+  }
+
+  #choose_your_food {
+    height: auto;
+    padding-bottom: 40px;
+  }
+  #choose_your_food .orders {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #choose_your_food .orders .order span {
+    margin-right: 12px;
+  }
+  #choose_your_food .orders .order i {
+    font-size: 18px;
+    margin-right: 12px;
+  }
+
+  .restaurant_cards {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .restaurant_cards .cards {
+    align-items: center;
+  }
+  .restaurant_cards .cards .restaurant {
+    width: 70%;
+    height: 300px;
+  }
+  .restaurant_cards .cards .restaurant .restaurant_picture .__picture1, .restaurant_cards .cards .restaurant .restaurant_picture .__picture3, .restaurant_cards .cards .restaurant .restaurant_picture .__picture4 {
+    height: auto;
+  }
+  .restaurant_cards .cards .restaurant .restaurant_picture .__picture2 {
+    height: auto;
+  }
+  .restaurant_cards .cards .restaurant:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+  }
+  .restaurant_cards .cards .new {
+    width: 24%;
+    align-items: center;
+    font-weight: 500;
+    border-radius: 2px;
+    color: #278870;
+    background-color: #99E2D0;
+    padding: 6px 13px;
+    font-size: 0.9rem;
+    margin: 12px 17px 0 245px;
+    position: absolute;
+  }
+  .restaurant_cards .cards .restaurant_text {
+    display: flex;
+    justify-content: space-between;
+    height: 29%;
+    width: 100%;
+    color: black;
+    background: #F6F6F6;
+    margin-top: 0px;
+    position: absolute;
+    bottom: 0px;
+    padding: 15px 15px;
+  }
+  .restaurant_cards .cards .restaurant_text .text h3 {
+    font-weight: bold;
+    margin: 0px;
+    font-size: 1.1rem;
+  }
+  .restaurant_cards .cards .restaurant_text .text p {
+    margin: 5px 0px;
+    padding-bottom: 5px;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+  .restaurant_cards .cards .restaurant_text .heart {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    color: black;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    padding-right: 10px;
+    margin-right: 5px;
+  }
+}
+/* Responsive Desktop */
 
 /*# sourceMappingURL=style.css.map */
