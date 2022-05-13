@@ -1,9 +1,11 @@
 /* Body website */
 
 body {
-    margin: auto;
-    font-family: "roboto", sans-serif;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  font-family: "roboto", sans-serif;
+  box-sizing: border-box;
     a {
       text-decoration: none;
     }

@@ -45,6 +45,8 @@ td, th {
 
 /* Body website */
 body {
+  display: flex;
+  flex-direction: column;
   margin: auto;
   font-family: "roboto", sans-serif;
   box-sizing: border-box;
@@ -63,7 +65,7 @@ body a {
 }
 .logo img {
   width: 45%;
-  height: 28px;
+  height: 1.8rem;
 }
 
 .location {
@@ -229,7 +231,7 @@ body a {
   transform: scale(1.08);
 }
 .restaurant_cards .cards .new {
-  width: 24%;
+  max-width: 24%;
   align-items: center;
   font-weight: 500;
   border-radius: 2px;
@@ -276,6 +278,11 @@ body a {
 }
 
 /* Header Menus */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 .logo {
   display: flex;
   justify-content: center;
@@ -296,14 +303,21 @@ body a {
 }
 
 .picture_restaurant {
-  height: 200px;
+  height: 250px;
+  overflow: hidden;
 }
 .picture_restaurant .picture_plate {
   width: 100%;
-  height: 25Opx;
-  overflow: hidden;
-  position: relative;
-  object-position: 100% 80%;
+  height: 270px;
+  object-fit: cover;
+  object-position: 100% 40%;
+}
+.picture_restaurant .picture_plate2 {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  object-position: 100% 50%;
+  background-position: bottom;
 }
 
 /* Menus */
@@ -312,11 +326,10 @@ body a {
   flex-direction: column;
   width: 100%;
   height: auto;
-  margin-top: -10px;
+  margin-top: -35px;
   border-radius: 30px 30px 0 0;
   background-color: #F6F6F6;
   justify-content: center;
-  position: absolute;
 }
 .menus .restaurant_name {
   display: flex;
@@ -324,12 +337,11 @@ body a {
   align-items: center;
 }
 .menus .restaurant_name h1 {
-  font-weight: 550;
-  width: 100%;
+  font-weight: 500;
   font-size: 1.8rem;
-  margin: 25px 20px 20px 15px;
+  margin: 25px 0px 20px 15px;
   font-family: "Shrikhand", cursive;
-  width: 70%;
+  width: 80%;
 }
 .menus .restaurant_name .heart {
   display: flex;
@@ -341,10 +353,6 @@ body a {
   font-size: 25px;
   padding-right: 10px;
   margin-right: 5px;
-}
-.menus .restaurant_name .heart i {
-  font-size: 25px;
-  width: 20%;
 }
 .menus .menu_starter h2, .menus .menu_main_course h2, .menus .menu_dessert h2 {
   font-weight: bold;
@@ -415,6 +423,7 @@ form .btn--menu {
   padding: 12px 40px;
 }
 
+/* Footer */
 /* Responsive Tablet */
 /* Responsive Desktop */
 /* Button */
@@ -442,6 +451,7 @@ form .btn--menu {
 footer {
   background: #353535;
   height: auto;
+  width: 100%;
   padding: 25px 20px;
 }
 footer .footer_logo {
@@ -541,7 +551,7 @@ footer .link_notice, footer .link_contact {
     transform: scale(1.08);
   }
   .restaurant_cards .cards .new {
-    width: 24%;
+    max-width: 24%;
     align-items: center;
     font-weight: 500;
     border-radius: 2px;

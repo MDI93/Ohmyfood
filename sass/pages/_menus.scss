@@ -1,5 +1,10 @@
 /* Header Menus */
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 .logo {
     display: flex;
     justify-content: center;
@@ -19,13 +24,20 @@
     }
 }
 .picture_restaurant {
-    height: 200px;
+    height: 250px;
+    overflow: hidden;
     .picture_plate {
         width: 100%;
-        height: 25Opx;
-        overflow: hidden;
-        position:relative;
-        object-position: 100% 80%;
+        height: 270px;
+        object-fit: cover;
+        object-position: 100% 40%;
+    }
+    .picture_plate2 {
+        width: 100%;
+        height: 270px;
+        object-fit: cover;
+        object-position: 100% 50%;
+        background-position: bottom;
     }
 }
 
@@ -36,30 +48,23 @@
     flex-direction: column;
     width: 100%;
     height: auto;
-    margin-top: -10px;
+    margin-top: -35px;
     border-radius: 30px 30px 0 0;
     background-color: $color-background2;
     justify-content: center;
-    position: absolute;
     .restaurant_name {
         display: flex;
         flex-direction: row;
         align-items: center;
         h1 {
-            font-weight: 550;
-            width: 100%;
+            font-weight: 500;
             font-size: 1.8rem;
-            margin: 25px 20px 20px 15px;
+            margin: 25px 0px 20px 15px;
             font-family: 'Shrikhand', cursive;
-            width: 70%;
+            width: 80%;
         }
         .heart {
             @include heart;
-            i {
-                font-size: 25px;
-                width: 20%;
-            }
-            
         }
     }
     .menu_starter, .menu_main_course, .menu_dessert {
@@ -125,6 +130,13 @@ form {
         padding: 12px 40px;
     }
 }
+
+/* Footer */
+
+footer {
+    @extend footer;
+}
+
 
 /* Responsive Tablet */
 /* Responsive Desktop */
