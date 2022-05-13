@@ -278,11 +278,6 @@ body a {
 }
 
 /* Header Menus */
-body {
-  display: flex;
-  flex-direction: column;
-}
-
 .logo {
   display: flex;
   justify-content: center;
@@ -444,7 +439,7 @@ form .btn--menu {
 }
 .btn:hover {
   transform: scale(1.1);
-  background: linear-gradient(#f99cdf, #a376db);
+  background: linear-gradient(#ff93e1, #a16be0);
 }
 
 /* Footer */
@@ -457,6 +452,7 @@ footer {
 footer .footer_logo {
   width: 85%;
   font-size: 1.2rem;
+  font-weight: 500;
   font-family: "Shrikhand", cursive;
   color: white;
   width: 30%;

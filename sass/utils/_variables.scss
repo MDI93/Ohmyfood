@@ -1,9 +1,9 @@
 // Main colors
 
 $color-primary: #9356DC;
-$color-primary-light:#a376db;
+$color-primary-light: lighten(#9356DC,5);
 $color-secondary: #FF79DA;
-$color-secondary-light:#f99cdf;
+$color-secondary-light: lighten(#FF79DA,5);
 $color-tertiary: #99E2D0;
 
 // Util colors
