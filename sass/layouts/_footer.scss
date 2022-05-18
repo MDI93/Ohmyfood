@@ -3,6 +3,7 @@
 footer{
     background: $color-footer;
     height: auto;
+    width: 100%;
     padding: 25px 20px;
         .footer_logo {
             @include footer_title;
