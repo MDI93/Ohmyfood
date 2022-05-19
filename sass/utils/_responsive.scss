@@ -84,8 +84,9 @@
                         font-size: 1.2rem;
                         }
                     }
-                    .heart {
-                    @include heart;
+                    .like_button {
+                        bottom: 40%;
+                        right: 7%;
                     }
             }
         }
@@ -93,13 +94,26 @@
 
     // Menus
 
+    .picture_restaurant {
+        height: 300px;
+        .picture_plate {
+            height: 300px;
+        }
+        .picture_plate2 {
+            height: 300px;
+        }
+    }
     .menus {
         .restaurant_name {
             align-items: center;
             justify-content: center;
             h1 {
-                width: 60%;
+                width: 80%;
             }
+            .like_button {
+                top: 32%;
+                right: 15%; 
+            }   
         }
         .menu_starter, .menu_main_course, .menu_dessert {
             display: flex;
@@ -156,6 +170,15 @@
         }
         p{
             width: 15%;
+        }
+    }
+    .picture_restaurant {
+        height: 300px;
+        .picture_plate {
+            height: 300px;
+        }
+        .picture_plate2 {
+            height: 300px;
         }
     }
     .explore{
@@ -222,8 +245,9 @@
                     font-size: 1rem;
                     }
                 }
-                .heart {
-                @include heart;
+                .like_button {
+                    bottom: 30%;
+                    right: 7%; 
                 }
         }
     }
@@ -266,8 +290,9 @@ footer {
             font-family: 'Shrikhand', cursive;
             width: 80%;
         }
-        .heart {
-            @include heart;
+        .like_button {
+            top: 32%;
+            right: 20%; 
         }
     }
     .menu_starter, .menu_main_course, .menu_dessert {

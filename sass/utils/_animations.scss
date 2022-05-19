@@ -1,0 +1,39 @@
+// Loading   
+
+@keyframes throbber-loader {
+    0% {
+      background: $color-primary;
+    }
+    10% {
+      background: $color-secondary;
+    }
+    40% {
+      background: $color-primary;
+    }
+  }
+
+// Like button
+
+.like_button {
+  color: black;
+  position: absolute;
+  .empty_like {
+    position: relative;
+    overflow: hidden;
+    font-size: 25px;
+    padding-top: 2px; 
+    transition: 2s all ease;
+  }
+  .full_like {
+    position: relative;
+    overflow: hidden;
+    font-size: 25px;
+    padding-top: 2px; 
+    transition: 2s all ease;
+    opacity: 0;
+  }
+  .full_like:hover {
+    opacity:1;
+  }
+}
+
