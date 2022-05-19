@@ -20,6 +20,7 @@
 @mixin footer_title {
   width: 85%;
   font-size: 1.2rem;
+  font-weight: 500;
   font-family: 'Shrikhand', cursive;
 }
 
@@ -61,19 +62,8 @@
 	position: absolute;
 	bottom: 0px;
 }
-@mixin heart {
-    display: flex; 
-    align-items: center;  
-    justify-items: center;
-    color: black;
-    width: 30px;
-    height: 30px;
-    font-size: 25px;
-    padding-right: 10px;
-    margin-right: 5px;
-}
 @mixin new {
-  width: 24%;
+  max-width: 24%;;
   align-items: center;
   font-weight: 500;
   border-radius: 2px;
@@ -81,7 +71,6 @@
   background-color: $color-tertiary;
   padding: 6px 13px; 
   font-size: 0.9rem;
-  margin: 12px 17px 0 245px;
   position: absolute;
 }
 

@@ -1,11 +1,6 @@
 /* Header Menus */
 
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.logo {
+.logo_menus {
     display: flex;
     justify-content: center;
     width: auto;
@@ -63,8 +58,9 @@ body {
             font-family: 'Shrikhand', cursive;
             width: 80%;
         }
-        .heart {
-            @include heart;
+        .like_button {
+                top: 28%;
+                right: 8%; 
         }
     }
     .menu_starter, .menu_main_course, .menu_dessert {
@@ -138,5 +134,4 @@ footer {
 }
 
 
-/* Responsive Tablet */
-/* Responsive Desktop */
+

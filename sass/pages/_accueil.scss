@@ -1,3 +1,39 @@
+/* Loading */
+
+/* :not(:required) hides these rules from IE9 and below */
+.cell {
+    display: flex;
+    justify-content: center;
+    .throbber-loader:not(:required) {
+        animation: throbber-loader 2000ms 300ms forwards ease-out;
+        background: white;
+        display: inline-block;
+        position: relative;
+        text-indent: -9999px;
+        width: 0.9em;
+        height: 1.5em;
+        margin: 0 1.6em;
+    }
+    .throbber-loader:not(:required):before, .throbber-loader:not(:required):after {
+        background: white;
+        content: '\x200B';
+        display: inline-block;
+        width: 0.9em;
+        height: 1.5em;
+        position: absolute;
+        top: 0;
+    }
+    .throbber-loader:not(:required):before {
+        animation: throbber-loader 2000ms 150ms forwards ease-out;
+        left: -1.6em;
+    }
+    
+    .throbber-loader:not(:required):after {
+        animation: throbber-loader 2000ms 450ms backwards ease-out;
+        right: -1.6em;
+    }
+}    
+
 /* Header */
 
 .logo {
@@ -8,7 +44,7 @@
     padding: 18px 0px 12px 0px;
     img{
         width: 45%;
-        height: 28px;
+        height: 1.8rem;
     }
 }
 .location {
@@ -146,6 +182,8 @@
         }
         .new {
             @include new;
+            left: 72%;
+            top: 5%;
         } 
         .restaurant_text {
             display: flex;
@@ -163,8 +201,9 @@
                     font-size: 1rem;
                     }
                 }
-                .heart {
-                @include heart;
+                .like_button {
+                    bottom: 30%;
+                    right: 7%; 
                 }
         }
     }

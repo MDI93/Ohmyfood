@@ -53,6 +53,41 @@ body {
 }
 body a {
   text-decoration: none;
+  color: black;
+}
+
+/* Loading */
+/* :not(:required) hides these rules from IE9 and below */
+.cell {
+  display: flex;
+  justify-content: center;
+}
+.cell .throbber-loader:not(:required) {
+  animation: throbber-loader 2000ms 300ms forwards ease-out;
+  background: white;
+  display: inline-block;
+  position: relative;
+  text-indent: -9999px;
+  width: 0.9em;
+  height: 1.5em;
+  margin: 0 1.6em;
+}
+.cell .throbber-loader:not(:required):before, .cell .throbber-loader:not(:required):after {
+  background: white;
+  content: "x200B";
+  display: inline-block;
+  width: 0.9em;
+  height: 1.5em;
+  position: absolute;
+  top: 0;
+}
+.cell .throbber-loader:not(:required):before {
+  animation: throbber-loader 2000ms 150ms forwards ease-out;
+  left: -1.6em;
+}
+.cell .throbber-loader:not(:required):after {
+  animation: throbber-loader 2000ms 450ms backwards ease-out;
+  right: -1.6em;
 }
 
 /* Header */
@@ -239,8 +274,9 @@ body a {
   background-color: #99E2D0;
   padding: 6px 13px;
   font-size: 0.9rem;
-  margin: 12px 17px 0 245px;
   position: absolute;
+  left: 72%;
+  top: 5%;
 }
 .restaurant_cards .cards .restaurant_text {
   display: flex;
@@ -265,16 +301,9 @@ body a {
   font-weight: 300;
   font-size: 1rem;
 }
-.restaurant_cards .cards .restaurant_text .heart {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  color: black;
-  width: 30px;
-  height: 30px;
-  font-size: 25px;
-  padding-right: 10px;
-  margin-right: 5px;
+.restaurant_cards .cards .restaurant_text .like_button {
+  bottom: 30%;
+  right: 7%;
 }
 
 /* Header Menus */
@@ -338,16 +367,9 @@ body a {
   font-family: "Shrikhand", cursive;
   width: 80%;
 }
-.menus .restaurant_name .heart {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  color: black;
-  width: 30px;
-  height: 30px;
-  font-size: 25px;
-  padding-right: 10px;
-  margin-right: 5px;
+.menus .restaurant_name .like_button {
+  top: 28%;
+  right: 8%;
 }
 .menus .menu_starter h2, .menus .menu_main_course h2, .menus .menu_dessert h2 {
   font-weight: bold;
@@ -552,9 +574,9 @@ footer .link_notice, footer .link_contact {
     background-color: #99E2D0;
     padding: 6px 13px;
     font-size: 0.9rem;
-    margin: 12px 17px 0 245px;
     position: absolute;
-    margin: 12px 17px 0 365px;
+    left: 80%;
+    top: 5%;
   }
   .restaurant_cards .cards .restaurant_text {
     display: flex;
@@ -580,16 +602,19 @@ footer .link_notice, footer .link_contact {
     font-weight: 300;
     font-size: 1.2rem;
   }
-  .restaurant_cards .cards .restaurant_text .heart {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    color: black;
-    width: 30px;
-    height: 30px;
-    font-size: 25px;
-    padding-right: 10px;
-    margin-right: 5px;
+  .restaurant_cards .cards .restaurant_text .like_button {
+    bottom: 40%;
+    right: 7%;
+  }
+
+  .picture_restaurant {
+    height: 300px;
+  }
+  .picture_restaurant .picture_plate {
+    height: 300px;
+  }
+  .picture_restaurant .picture_plate2 {
+    height: 300px;
   }
 
   .menus .restaurant_name {
@@ -597,7 +622,11 @@ footer .link_notice, footer .link_contact {
     justify-content: center;
   }
   .menus .restaurant_name h1 {
-    width: 60%;
+    width: 80%;
+  }
+  .menus .restaurant_name .like_button {
+    top: 32%;
+    right: 15%;
   }
   .menus .menu_starter, .menus .menu_main_course, .menus .menu_dessert {
     display: flex;
@@ -641,6 +670,16 @@ footer .link_notice, footer .link_contact {
   }
   .location p {
     width: 15%;
+  }
+
+  .picture_restaurant {
+    height: 300px;
+  }
+  .picture_restaurant .picture_plate {
+    height: 300px;
+  }
+  .picture_restaurant .picture_plate2 {
+    height: 300px;
   }
 
   .explore {
@@ -722,8 +761,9 @@ footer .link_notice, footer .link_contact {
     background-color: #99E2D0;
     padding: 6px 13px;
     font-size: 0.9rem;
-    margin: 12px 17px 0 245px;
     position: absolute;
+    left: 75%;
+    top: 5%;
   }
   .restaurant_cards .cards .restaurant_text {
     display: flex;
@@ -748,16 +788,9 @@ footer .link_notice, footer .link_contact {
     font-weight: 300;
     font-size: 1rem;
   }
-  .restaurant_cards .cards .restaurant_text .heart {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    color: black;
-    width: 30px;
-    height: 30px;
-    font-size: 25px;
-    padding-right: 10px;
-    margin-right: 5px;
+  .restaurant_cards .cards .restaurant_text .like_button {
+    bottom: 30%;
+    right: 7%;
   }
 
   footer {
@@ -793,16 +826,9 @@ footer .link_notice, footer .link_contact {
     font-family: "Shrikhand", cursive;
     width: 80%;
   }
-  .menus .restaurant_name .heart {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    color: black;
-    width: 30px;
-    height: 30px;
-    font-size: 25px;
-    padding-right: 10px;
-    margin-right: 5px;
+  .menus .restaurant_name .like_button {
+    top: 32%;
+    right: 20%;
   }
   .menus .menu_starter, .menus .menu_main_course, .menus .menu_dessert {
     display: flex;
@@ -867,6 +893,39 @@ footer .link_notice, footer .link_contact {
     padding-top: 25px;
     margin-left: -10px;
   }
+}
+@keyframes throbber-loader {
+  0% {
+    background: #9356DC;
+  }
+  10% {
+    background: #FF79DA;
+  }
+  40% {
+    background: #9356DC;
+  }
+}
+.like_button {
+  color: black;
+  position: absolute;
+}
+.like_button .empty_like {
+  position: relative;
+  overflow: hidden;
+  font-size: 25px;
+  padding-top: 2px;
+  transition: 2s all ease;
+}
+.like_button .full_like {
+  position: relative;
+  overflow: hidden;
+  font-size: 25px;
+  padding-top: 2px;
+  transition: 2s all ease;
+  opacity: 0;
+}
+.like_button .full_like:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
