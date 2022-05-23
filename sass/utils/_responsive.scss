@@ -112,7 +112,7 @@
                 width: 80%;
             }
             .like_button {
-                top: 32%;
+                top: 42%;
                 right: 15%; 
             }   
         }
@@ -127,7 +127,10 @@
             .starter, .main_course, .dessert {
                 width: 70%;
             }
-        }   
+        }  
+        .btn--menu {
+            font-size: 18px;
+        } 
     }  
     footer {
         display: flex;
@@ -294,7 +297,7 @@ footer {
             width: 80%;
         }
         .like_button {
-            top: 32%;
+            top: 42%;
             right: 20%; 
         }
     }
@@ -352,6 +355,10 @@ footer {
                 margin-left: -10px;
             }
         }
+    } 
+    .btn--menu {
+        margin: 40px;
+        font-size: 20px;
     }   
 }
 }

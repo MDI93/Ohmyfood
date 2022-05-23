@@ -640,6 +640,9 @@ footer .link_notice, footer .link_contact {
   .menus .menu_starter .starter, .menus .menu_starter .main_course, .menus .menu_starter .dessert, .menus .menu_main_course .starter, .menus .menu_main_course .main_course, .menus .menu_main_course .dessert, .menus .menu_dessert .starter, .menus .menu_dessert .main_course, .menus .menu_dessert .dessert {
     width: 70%;
   }
+  .menus .btn--menu {
+    font-size: 18px;
+  }
 
   footer {
     display: flex;
@@ -892,6 +895,10 @@ footer .link_notice, footer .link_contact {
     font-weight: 500;
     padding-top: 25px;
     margin-left: -10px;
+  }
+  .menus .btn--menu {
+    margin: 40px;
+    font-size: 20px;
   }
 }
 .loading {
