@@ -56,40 +56,6 @@ body a {
   color: black;
 }
 
-/* Loading */
-/* :not(:required) hides these rules from IE9 and below */
-.cell {
-  display: flex;
-  justify-content: center;
-}
-.cell .throbber-loader:not(:required) {
-  animation: throbber-loader 2000ms 300ms forwards ease-out;
-  background: white;
-  display: inline-block;
-  position: relative;
-  text-indent: -9999px;
-  width: 0.9em;
-  height: 1.5em;
-  margin: 0 1.6em;
-}
-.cell .throbber-loader:not(:required):before, .cell .throbber-loader:not(:required):after {
-  background: white;
-  content: "x200B";
-  display: inline-block;
-  width: 0.9em;
-  height: 1.5em;
-  position: absolute;
-  top: 0;
-}
-.cell .throbber-loader:not(:required):before {
-  animation: throbber-loader 2000ms 150ms forwards ease-out;
-  left: -1.6em;
-}
-.cell .throbber-loader:not(:required):after {
-  animation: throbber-loader 2000ms 450ms backwards ease-out;
-  right: -1.6em;
-}
-
 /* Header */
 .logo {
   display: flex;
@@ -368,7 +334,7 @@ body a {
   width: 80%;
 }
 .menus .restaurant_name .like_button {
-  top: 28%;
+  top: 36%;
   right: 8%;
 }
 .menus .menu_starter h2, .menus .menu_main_course h2, .menus .menu_dessert h2 {
@@ -625,7 +591,7 @@ footer .link_notice, footer .link_contact {
     width: 80%;
   }
   .menus .restaurant_name .like_button {
-    top: 32%;
+    top: 42%;
     right: 15%;
   }
   .menus .menu_starter, .menus .menu_main_course, .menus .menu_dessert {
@@ -827,7 +793,7 @@ footer .link_notice, footer .link_contact {
     width: 80%;
   }
   .menus .restaurant_name .like_button {
-    top: 32%;
+    top: 42%;
     right: 20%;
   }
   .menus .menu_starter, .menus .menu_main_course, .menus .menu_dessert {
@@ -894,6 +860,38 @@ footer .link_notice, footer .link_contact {
     margin-left: -10px;
   }
 }
+.loading {
+  display: flex;
+  justify-content: center;
+}
+.loading .throbber-loader {
+  animation: throbber-loader 2000ms 300ms forwards ease-out;
+  background: white;
+  display: inline-block;
+  position: relative;
+  text-indent: -9999px;
+  width: 0.9em;
+  height: 1.5em;
+  margin: 0 1.6em;
+}
+.loading .throbber-loader::before, .loading .throbber-loader::after {
+  background: white;
+  content: "x200B";
+  display: inline-block;
+  width: 0.9em;
+  height: 1.5em;
+  position: absolute;
+  top: 0;
+}
+.loading .throbber-loader::before {
+  animation: throbber-loader 2000ms 150ms forwards ease-out;
+  left: -1.6em;
+}
+.loading .throbber-loader::after {
+  animation: throbber-loader 2000ms 450ms backwards ease-out;
+  right: -1.6em;
+}
+
 @keyframes throbber-loader {
   0% {
     background: #9356DC;
@@ -902,6 +900,12 @@ footer .link_notice, footer .link_contact {
     background: #FF79DA;
   }
   40% {
+    background: #9356DC;
+  }
+  60% {
+    background: #FF79DA;
+  }
+  90% {
     background: #9356DC;
   }
 }
@@ -917,6 +921,7 @@ footer .link_notice, footer .link_contact {
   transition: 2s all ease;
 }
 .like_button .full_like {
+  color: #9356DC;
   position: relative;
   overflow: hidden;
   font-size: 25px;
@@ -926,6 +931,40 @@ footer .link_notice, footer .link_contact {
 }
 .like_button .full_like:hover {
   opacity: 1;
+}
+
+@keyframes progressive {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.starter, .main_course, .dessert {
+  opacity: 0;
+  animation: progressive 2000ms 200ms forwards ease-out;
+}
+
+.starter_1, .main_course_1, .dessert_1 {
+  animation-delay: 200ms;
+}
+
+.starter_2, .main_course_2, .dessert_2 {
+  animation-delay: 400ms;
+}
+
+.starter_3, .main_course_3, .dessert_3 {
+  animation-delay: 600ms;
+}
+
+.starter_4 {
+  animation-delay: 800ms;
 }
 
 /*# sourceMappingURL=style.css.map */

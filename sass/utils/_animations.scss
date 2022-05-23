@@ -1,5 +1,39 @@
 // Loading   
 
+.loading {
+  display: flex;
+  justify-content: center;
+  .throbber-loader {
+      animation: throbber-loader 2000ms 300ms forwards ease-out;
+      background: white;
+      display: inline-block;
+      position: relative;
+      text-indent: -9999px;
+      width: 0.9em;
+      height: 1.5em;
+      margin: 0 1.6em;
+  }
+  .throbber-loader::before, .throbber-loader::after {
+      background: white;
+      content: '\x200B';
+      display: inline-block;
+      width: 0.9em;
+      height: 1.5em;
+      position: absolute;
+      top: 0;
+  }
+  .throbber-loader::before {
+      animation: throbber-loader 2000ms 150ms forwards ease-out;
+      left: -1.6em;
+  }
+  
+  .throbber-loader::after {
+      animation: throbber-loader 2000ms 450ms backwards ease-out;
+      right: -1.6em;
+  }
+}    
+
+
 @keyframes throbber-loader {
     0% {
       background: $color-primary;
@@ -8,6 +42,12 @@
       background: $color-secondary;
     }
     40% {
+      background: $color-primary;
+    }
+    60% {
+      background: $color-secondary;
+    }
+    90% {
       background: $color-primary;
     }
   }
@@ -25,6 +65,7 @@
     transition: 2s all ease;
   }
   .full_like {
+    color: $color-primary;
     position: relative;
     overflow: hidden;
     font-size: 25px;
@@ -36,4 +77,41 @@
     opacity:1;
   }
 }
+
+// Progressive dishes
+
+
+
+@keyframes progressive {
+  0% {
+    opacity:0;
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(5px);
+  }
+  100% {
+    opacity:1;
+    transform: translateY(0);
+  }
+}
+
+.starter, .main_course, .dessert {
+  opacity:0;
+  animation: progressive 2000ms 200ms forwards ease-out;
+}
+.starter_1, .main_course_1 , .dessert_1 {
+  animation-delay: 200ms;
+}
+.starter_2, .main_course_2 , .dessert_2 {
+  animation-delay: 400ms;
+}
+.starter_3, .main_course_3 , .dessert_3 {
+  animation-delay: 600ms;
+}
+.starter_4 {
+  animation-delay: 800ms;
+}
+
+// Add basket
 
