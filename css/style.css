@@ -392,14 +392,15 @@ body a {
   align-items: center;
   font-size: 16px;
   width: auto;
-  min-width: max-content;
+  max-height: 80px;
   padding: 15px 0px;
   margin: 15px;
-  border: 1px solid #F6F6F6;
   border-radius: 20px;
   background: #F6F6F6;
   justify-content: flex-start;
   box-shadow: 0px 2px 10px #999;
+  overflow: hidden;
+  max-height: 80px;
 }
 .menus .menu_starter .starter .starter_text, .menus .menu_starter .starter .main_course_text, .menus .menu_starter .starter .dessert_text, .menus .menu_starter .main_course .starter_text, .menus .menu_starter .main_course .main_course_text, .menus .menu_starter .main_course .dessert_text, .menus .menu_starter .dessert .starter_text, .menus .menu_starter .dessert .main_course_text, .menus .menu_starter .dessert .dessert_text, .menus .menu_main_course .starter .starter_text, .menus .menu_main_course .starter .main_course_text, .menus .menu_main_course .starter .dessert_text, .menus .menu_main_course .main_course .starter_text, .menus .menu_main_course .main_course .main_course_text, .menus .menu_main_course .main_course .dessert_text, .menus .menu_main_course .dessert .starter_text, .menus .menu_main_course .dessert .main_course_text, .menus .menu_main_course .dessert .dessert_text, .menus .menu_dessert .starter .starter_text, .menus .menu_dessert .starter .main_course_text, .menus .menu_dessert .starter .dessert_text, .menus .menu_dessert .main_course .starter_text, .menus .menu_dessert .main_course .main_course_text, .menus .menu_dessert .main_course .dessert_text, .menus .menu_dessert .dessert .starter_text, .menus .menu_dessert .dessert .main_course_text, .menus .menu_dessert .dessert .dessert_text {
   padding-left: 10px;
@@ -413,18 +414,24 @@ body a {
   margin-bottom: 5px;
 }
 .menus .menu_starter .starter .starter_text p, .menus .menu_starter .starter .main_course_text p, .menus .menu_starter .starter .dessert_text p, .menus .menu_starter .main_course .starter_text p, .menus .menu_starter .main_course .main_course_text p, .menus .menu_starter .main_course .dessert_text p, .menus .menu_starter .dessert .starter_text p, .menus .menu_starter .dessert .main_course_text p, .menus .menu_starter .dessert .dessert_text p, .menus .menu_main_course .starter .starter_text p, .menus .menu_main_course .starter .main_course_text p, .menus .menu_main_course .starter .dessert_text p, .menus .menu_main_course .main_course .starter_text p, .menus .menu_main_course .main_course .main_course_text p, .menus .menu_main_course .main_course .dessert_text p, .menus .menu_main_course .dessert .starter_text p, .menus .menu_main_course .dessert .main_course_text p, .menus .menu_main_course .dessert .dessert_text p, .menus .menu_dessert .starter .starter_text p, .menus .menu_dessert .starter .main_course_text p, .menus .menu_dessert .starter .dessert_text p, .menus .menu_dessert .main_course .starter_text p, .menus .menu_dessert .main_course .main_course_text p, .menus .menu_dessert .main_course .dessert_text p, .menus .menu_dessert .dessert .starter_text p, .menus .menu_dessert .dessert .main_course_text p, .menus .menu_dessert .dessert .dessert_text p {
-  width: 90%;
   font-size: 15px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   opacity: 60%;
 }
-.menus .menu_starter .starter .price, .menus .menu_starter .main_course .price, .menus .menu_starter .dessert .price, .menus .menu_main_course .starter .price, .menus .menu_main_course .main_course .price, .menus .menu_main_course .dessert .price, .menus .menu_dessert .starter .price, .menus .menu_dessert .main_course .price, .menus .menu_dessert .dessert .price {
+.menus .menu_starter .starter .basket, .menus .menu_starter .main_course .basket, .menus .menu_starter .dessert .basket, .menus .menu_main_course .starter .basket, .menus .menu_main_course .main_course .basket, .menus .menu_main_course .dessert .basket, .menus .menu_dessert .starter .basket, .menus .menu_dessert .main_course .basket, .menus .menu_dessert .dessert .basket {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.menus .menu_starter .starter .basket .price p, .menus .menu_starter .main_course .basket .price p, .menus .menu_starter .dessert .basket .price p, .menus .menu_main_course .starter .basket .price p, .menus .menu_main_course .main_course .basket .price p, .menus .menu_main_course .dessert .basket .price p, .menus .menu_dessert .starter .basket .price p, .menus .menu_dessert .main_course .basket .price p, .menus .menu_dessert .dessert .basket .price p {
+  width: 20px;
+  margin-right: 15px;
   font-size: 15px;
   font-weight: 500;
   padding-top: 25px;
-  margin-left: -10px;
 }
 
 form {
@@ -624,10 +631,6 @@ footer .link_notice, footer .link_contact {
   .menus .restaurant_name h1 {
     width: 80%;
   }
-  .menus .restaurant_name .like_button {
-    top: 42%;
-    right: 15%;
-  }
   .menus .menu_starter, .menus .menu_main_course, .menus .menu_dessert {
     display: flex;
     flex-direction: column;
@@ -638,7 +641,7 @@ footer .link_notice, footer .link_contact {
     order: flex-start;
   }
   .menus .menu_starter .starter, .menus .menu_starter .main_course, .menus .menu_starter .dessert, .menus .menu_main_course .starter, .menus .menu_main_course .main_course, .menus .menu_main_course .dessert, .menus .menu_dessert .starter, .menus .menu_dessert .main_course, .menus .menu_dessert .dessert {
-    width: 70%;
+    width: 60%;
   }
   .menus .btn--menu {
     font-size: 18px;
@@ -859,7 +862,6 @@ footer .link_notice, footer .link_contact {
     align-items: center;
     font-size: 16px;
     width: 60%;
-    min-width: max-content;
     padding: 15px 0px;
     margin: 15px;
     border: 1px solid #F6F6F6;
@@ -1006,6 +1008,38 @@ footer .link_notice, footer .link_contact {
 
 .starter_4 {
   animation-delay: 800ms;
+}
+
+.add_basket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  overflow: hidden;
+  width: 20px;
+  height: 100%;
+  margin-left: 15px;
+  padding: 30px 45px;
+}
+.add_basket .add {
+  background-color: white;
+  border-radius: 50px;
+  color: #99E2D0;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 5px 7px;
+  transition: all 600ms ease;
+}
+
+.basket {
+  transition: transform 800ms;
+}
+
+.basket:hover {
+  transform: translate(-6em, 0);
+}
+.basket:hover .add:hover {
+  transform: rotate(360deg);
 }
 
 /*# sourceMappingURL=style.css.map */
