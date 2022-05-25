@@ -59,7 +59,7 @@
             width: 80%;
         }
         .like_button {
-                top: 28%;
+                top: 36%;
                 right: 8%; 
         }
     }
@@ -79,14 +79,15 @@
             align-items: center;
             font-size: 16px;
             width: auto;
-            min-width: max-content;
+            max-height: 80px;
             padding: 15px 0px;
             margin: 15px;
-            border: 1px solid $color-background2;
             border-radius: 20px;
             background: $color-background2;
             justify-content:flex-start;
             box-shadow: $shadow;
+            overflow: hidden;
+            max-height: 80px;
             .starter_text, .main_course_text, .dessert_text {
                 padding-left: 10px;
                 min-width: 90%;
@@ -94,9 +95,9 @@
                     @include third_title;
                     font-weight: 500;
                     margin-bottom: 5px;
+                    text-overflow: ellipsis;
                 }
                 p {
-                    width: 90%;
                     font-size: 15px;
                     text-overflow: ellipsis;
                     overflow: hidden;
@@ -104,11 +105,18 @@
                     opacity: 60%;
                 }
             }
-            .price {
+            .basket { 
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-end;
+                .price p {
+                width: 20px;
+                margin-right: 15px;
                 font-size: 15px;
                 font-weight: 500;
                 padding-top: 25px;
-                margin-left: -10px;
+                }
             }
         }
     }   

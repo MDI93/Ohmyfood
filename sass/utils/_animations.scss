@@ -96,19 +96,19 @@
 
 .starter, .main_course, .dessert {
   opacity:0;
-  animation: progressive 2000ms 200ms forwards ease-out;
+  animation: progressive 2000ms 300ms forwards ease-out;
 }
 .starter_1, .main_course_1 , .dessert_1 {
-  animation-delay: 200ms;
+  animation-delay: 300ms;
 }
 .starter_2, .main_course_2 , .dessert_2 {
-  animation-delay: 400ms;
-}
-.starter_3, .main_course_3 , .dessert_3 {
   animation-delay: 600ms;
 }
-.starter_4 {
+.starter_3, .main_course_3 , .dessert_3 {
   animation-delay: 800ms;
+}
+.starter_4 {
+  animation-delay: 1000ms;
 }
 
 // Add basket
@@ -129,7 +129,7 @@
     color: $color-tertiary;
     font-size: 22px;
     font-weight: 600;
-    padding: 5px 7px;
+    padding: 5px 8px;
     transition: all 600ms ease;
   }
 }
@@ -138,7 +138,7 @@
 }
 .basket:hover {
   transform: translate(-6em,0);
-  .add:hover {
+  .add {
     transform: rotate(360deg);
   }
 }
