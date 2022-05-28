@@ -6,7 +6,7 @@
     
     .logo {
         img{
-            width: 40%;
+            width: 35%;
             height: 28px;
         }
     }
@@ -103,20 +103,13 @@
         .picture_plate2 {
             height: 300px;
         }
-        .like_button {
-            top: 38%;
-        }
     }
     .menus {
         .restaurant_name {
             justify-content: center;
             h1 {
                 width: 80%;
-            }
-            .like_button {
-                top: 42%;
-                right: 20%; 
-            }  
+            } 
         }
         .menu_starter, .menu_main_course, .menu_dessert {
             display: flex;
@@ -159,7 +152,7 @@
     }       
     .logo_menus {
         img{
-            width: 40%;
+            width: 35%;
             height: 28px;
         }
     } 
@@ -226,7 +219,7 @@
         padding-bottom: 30px;
         .restaurant{
             @include cards;
-            max-width: 40%;
+            max-width: 35%;
             .restaurant_picture {
                 .__picture1, .__picture3, .__picture4 {
                     @include cards_img_horizontal;
@@ -261,82 +254,76 @@
                     font-size: 1rem;
                     }
                 }
-                .like_button {
-                    bottom: 30%;
-                    right: 7%; 
-                }
         }
     }
 } 
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    .link_restaurant {
-        i {
-            margin-right: 15px;
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .link_restaurant {
+            i {
+                margin-right: 15px;
+            }
         }
-    }
-    .link_partner {
-        i {
-            margin-right: 15px;
-        }
-    } 
-}       
+        .link_partner {
+            i {
+                margin-right: 15px;
+            }
+        } 
+    }    
+
+    /* Menus */
+
     .logo_menus {
         img{
         width: 40%;
         height: 28px;
         }
-}  
-/* Menus */
+    }  
 
-.menus {
-    .restaurant_name {
-        display: flex;
-        justify-content: space-around;
-        width: 80%;
-        margin-left: 80px;
-        .like_button {
-            top: 55%;
-            right: 20%; 
-        }
-    }
-    .dishes {
-        display: flex;
-        flex-direction: row;
-        width: auto;
-        .menu_starter, .menu_main_course, .menu_dessert {
+    .menus {
+        .restaurant_name {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 33%;
-            .starter, .main_course, .dessert {
-                width: 90%;
-                .starter_text, .main_course_text, .dessert_text {
-                    h3 {
-                        padding-left: 20px;
-                        font-size: 1.3rem;
+            justify-content: space-around;
+            width: 80%;
+            margin-left: 80px;
+        }
+        .dishes {
+            display: flex;
+            flex-direction: row;
+            width: auto;
+            .menu_starter, .menu_main_course, .menu_dessert {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 33%;
+                .starter, .main_course, .dessert {
+                    width: 90%;
+                    .starter_text, .main_course_text, .dessert_text {
+                        h3 {
+                            padding-left: 20px;
+                            font-size: 1.3rem;
+                        }
+                        p {
+                            width: 90%;
+                            font-size: 17px;
+                            padding-left: 20px;
+                        }
                     }
-                    p {
-                        width: 90%;
-                        font-size: 17px;
-                        padding-left: 20px;
+                    .add_basket {
+                        padding: 30px 50px;
                     }
-                }
-                .add_basket {
-                    padding: 30px 50px;
-                }
-                .price {
-                    margin-right: 10px;
+                    .price {
+                        margin-right: 10px;
+                    }
                 }
             }
-        }
-    } 
-    .btn--menu {
-        margin: 40px;
-        font-size: 20px;
-    }   
-}
+        } 
+        .btn--menu {
+            margin: 40px;
+            font-size: 20px;
+        }   
+    }
 }

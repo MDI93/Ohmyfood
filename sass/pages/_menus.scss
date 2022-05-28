@@ -49,19 +49,21 @@
     justify-content: center;
     .restaurant_name {
         display: flex;
+        justify-content: space-between;
         flex-direction: row;
         align-items: center;
+        width: 90%;
         h1 {
             font-weight: 500;
             font-size: 1.8rem;
-            margin: 25px 0px 20px 15px;
+            margin: 25px 0px 20px 25px;
             font-family: 'Shrikhand', cursive;
-            width: 80%;
-        }
-        .like_button {
-                top: 36%;
-                right: 8%; 
-        }
+            } 
+        #like_button {
+            padding-bottom: 25px;
+            padding-right: 20px;
+            padding-left: 25px;
+        }      
     }
     .menu_starter, .menu_main_course, .menu_dessert {
         h2 {
@@ -75,7 +77,6 @@
         }
         .starter, .main_course, .dessert {
             display: flex;
-            justify-content: space-between;
             align-items: center;
             font-size: 16px;
             width: auto;
@@ -84,12 +85,17 @@
             margin: 15px;
             border-radius: 20px;
             background: $color-background2;
-            justify-content:flex-start;
+            justify-content: flex-start;
             box-shadow: $shadow;
             overflow: hidden;
             max-height: 80px;
+            resize: both;
             .starter_text, .main_course_text, .dessert_text {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
                 padding-left: 10px;
+                width: 90%;
                 min-width: 90%;
                 h3 {
                     @include third_title;

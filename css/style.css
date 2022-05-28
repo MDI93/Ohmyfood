@@ -323,19 +323,21 @@ body a {
 }
 .menus .restaurant_name {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   align-items: center;
+  width: 90%;
 }
 .menus .restaurant_name h1 {
   font-weight: 500;
   font-size: 1.8rem;
-  margin: 25px 0px 20px 15px;
+  margin: 25px 0px 20px 25px;
   font-family: "Shrikhand", cursive;
-  width: 80%;
 }
-.menus .restaurant_name .like_button {
-  top: 36%;
-  right: 8%;
+.menus .restaurant_name #like_button {
+  padding-bottom: 25px;
+  padding-right: 20px;
+  padding-left: 25px;
 }
 .menus .menu_starter h2, .menus .menu_main_course h2, .menus .menu_dessert h2 {
   font-weight: bold;
@@ -354,7 +356,6 @@ body a {
 }
 .menus .menu_starter .starter, .menus .menu_starter .main_course, .menus .menu_starter .dessert, .menus .menu_main_course .starter, .menus .menu_main_course .main_course, .menus .menu_main_course .dessert, .menus .menu_dessert .starter, .menus .menu_dessert .main_course, .menus .menu_dessert .dessert {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   font-size: 16px;
   width: auto;
@@ -367,9 +368,14 @@ body a {
   box-shadow: 0px 2px 10px #999;
   overflow: hidden;
   max-height: 80px;
+  resize: both;
 }
 .menus .menu_starter .starter .starter_text, .menus .menu_starter .starter .main_course_text, .menus .menu_starter .starter .dessert_text, .menus .menu_starter .main_course .starter_text, .menus .menu_starter .main_course .main_course_text, .menus .menu_starter .main_course .dessert_text, .menus .menu_starter .dessert .starter_text, .menus .menu_starter .dessert .main_course_text, .menus .menu_starter .dessert .dessert_text, .menus .menu_main_course .starter .starter_text, .menus .menu_main_course .starter .main_course_text, .menus .menu_main_course .starter .dessert_text, .menus .menu_main_course .main_course .starter_text, .menus .menu_main_course .main_course .main_course_text, .menus .menu_main_course .main_course .dessert_text, .menus .menu_main_course .dessert .starter_text, .menus .menu_main_course .dessert .main_course_text, .menus .menu_main_course .dessert .dessert_text, .menus .menu_dessert .starter .starter_text, .menus .menu_dessert .starter .main_course_text, .menus .menu_dessert .starter .dessert_text, .menus .menu_dessert .main_course .starter_text, .menus .menu_dessert .main_course .main_course_text, .menus .menu_dessert .main_course .dessert_text, .menus .menu_dessert .dessert .starter_text, .menus .menu_dessert .dessert .main_course_text, .menus .menu_dessert .dessert .dessert_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   padding-left: 10px;
+  width: 90%;
   min-width: 90%;
 }
 .menus .menu_starter .starter .starter_text h3, .menus .menu_starter .starter .main_course_text h3, .menus .menu_starter .starter .dessert_text h3, .menus .menu_starter .main_course .starter_text h3, .menus .menu_starter .main_course .main_course_text h3, .menus .menu_starter .main_course .dessert_text h3, .menus .menu_starter .dessert .starter_text h3, .menus .menu_starter .dessert .main_course_text h3, .menus .menu_starter .dessert .dessert_text h3, .menus .menu_main_course .starter .starter_text h3, .menus .menu_main_course .starter .main_course_text h3, .menus .menu_main_course .starter .dessert_text h3, .menus .menu_main_course .main_course .starter_text h3, .menus .menu_main_course .main_course .main_course_text h3, .menus .menu_main_course .main_course .dessert_text h3, .menus .menu_main_course .dessert .starter_text h3, .menus .menu_main_course .dessert .main_course_text h3, .menus .menu_main_course .dessert .dessert_text h3, .menus .menu_dessert .starter .starter_text h3, .menus .menu_dessert .starter .main_course_text h3, .menus .menu_dessert .starter .dessert_text h3, .menus .menu_dessert .main_course .starter_text h3, .menus .menu_dessert .main_course .main_course_text h3, .menus .menu_dessert .main_course .dessert_text h3, .menus .menu_dessert .dessert .starter_text h3, .menus .menu_dessert .dessert .main_course_text h3, .menus .menu_dessert .dessert .dessert_text h3 {
@@ -590,19 +596,12 @@ footer .link_notice, footer .link_contact {
   .picture_restaurant .picture_plate2 {
     height: 300px;
   }
-  .picture_restaurant .like_button {
-    top: 38%;
-  }
 
   .menus .restaurant_name {
     justify-content: center;
   }
   .menus .restaurant_name h1 {
     width: 80%;
-  }
-  .menus .restaurant_name .like_button {
-    top: 42%;
-    right: 20%;
   }
   .menus .menu_starter, .menus .menu_main_course, .menus .menu_dessert {
     display: flex;
@@ -639,7 +638,7 @@ footer .link_notice, footer .link_contact {
   }
 
   .logo_menus img {
-    width: 40%;
+    width: 35%;
     height: 28px;
   }
 }
@@ -716,7 +715,7 @@ footer .link_notice, footer .link_contact {
     overflow: hidden;
     transition: transform 0.4s;
     position: relative;
-    max-width: 40%;
+    max-width: 35%;
   }
   .restaurant_cards .cards .restaurant .restaurant_picture .__picture1, .restaurant_cards .cards .restaurant .restaurant_picture .__picture3, .restaurant_cards .cards .restaurant .restaurant_picture .__picture4 {
     width: 100%;
@@ -773,10 +772,6 @@ footer .link_notice, footer .link_contact {
     font-weight: 300;
     font-size: 1rem;
   }
-  .restaurant_cards .cards .restaurant_text .like_button {
-    bottom: 30%;
-    right: 7%;
-  }
 
   footer {
     display: flex;
@@ -791,21 +786,17 @@ footer .link_notice, footer .link_contact {
     margin-right: 15px;
   }
 
+  /* Menus */
   .logo_menus img {
     width: 40%;
     height: 28px;
   }
 
-  /* Menus */
   .menus .restaurant_name {
     display: flex;
     justify-content: space-around;
     width: 80%;
     margin-left: 80px;
-  }
-  .menus .restaurant_name .like_button {
-    top: 55%;
-    right: 20%;
   }
   .menus .dishes {
     display: flex;
