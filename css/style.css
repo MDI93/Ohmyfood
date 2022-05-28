@@ -130,6 +130,7 @@ body a {
   margin-bottom: 15px;
 }
 #choose_your_food .orders {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -842,12 +843,14 @@ footer .link_notice, footer .link_contact {
   }
 }
 .loading {
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .loading .throbber-loader {
-  animation: throbber-loader 2000ms 300ms forwards ease-out;
-  background: white;
+  animation: throbber-loader 3000ms 300ms forwards ease-out;
   display: inline-block;
   position: relative;
   text-indent: -9999px;
@@ -856,7 +859,6 @@ footer .link_notice, footer .link_contact {
   margin: 0 1.6em;
 }
 .loading .throbber-loader::before, .loading .throbber-loader::after {
-  background: white;
   content: "x200B";
   display: inline-block;
   width: 0.9em;
@@ -865,11 +867,11 @@ footer .link_notice, footer .link_contact {
   top: 0;
 }
 .loading .throbber-loader::before {
-  animation: throbber-loader 2000ms 150ms forwards ease-out;
+  animation: throbber-loader 3000ms 150ms forwards ease-out;
   left: -1.6em;
 }
 .loading .throbber-loader::after {
-  animation: throbber-loader 2000ms 450ms backwards ease-out;
+  animation: throbber-loader 3000ms 450ms backwards ease-out;
   right: -1.6em;
 }
 
@@ -888,6 +890,20 @@ footer .link_notice, footer .link_contact {
   }
   90% {
     background: #9356DC;
+  }
+}
+body {
+  animation: background-loader 2500ms forwards ease-out;
+}
+
+@keyframes background-loader {
+  0% {
+    background: #F6F6F6;
+    opacity: 0.1;
+  }
+  50% {
+    background: #F6F6F6;
+    opacity: 0.1;
   }
 }
 .like_button {
