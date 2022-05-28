@@ -1,6 +1,20 @@
+/* Responsive Mobile */
+
+@media screen and (min-width: 530px) and (max-width: 650px) {
+    .basket { 
+        margin-left: 1em;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 768px) {
+    .basket { 
+        margin-left: 1.8em;
+    }
+}
+
 /* Responsive Tablet */
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
     
     //accueil
     
@@ -161,7 +175,7 @@
 /* Responsive Desktop */
 
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 993px) {
 
     //accueil
 

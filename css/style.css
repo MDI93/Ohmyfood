@@ -368,14 +368,12 @@ body a {
   box-shadow: 0px 2px 10px #999;
   overflow: hidden;
   max-height: 80px;
-  resize: both;
 }
 .menus .menu_starter .starter .starter_text, .menus .menu_starter .starter .main_course_text, .menus .menu_starter .starter .dessert_text, .menus .menu_starter .main_course .starter_text, .menus .menu_starter .main_course .main_course_text, .menus .menu_starter .main_course .dessert_text, .menus .menu_starter .dessert .starter_text, .menus .menu_starter .dessert .main_course_text, .menus .menu_starter .dessert .dessert_text, .menus .menu_main_course .starter .starter_text, .menus .menu_main_course .starter .main_course_text, .menus .menu_main_course .starter .dessert_text, .menus .menu_main_course .main_course .starter_text, .menus .menu_main_course .main_course .main_course_text, .menus .menu_main_course .main_course .dessert_text, .menus .menu_main_course .dessert .starter_text, .menus .menu_main_course .dessert .main_course_text, .menus .menu_main_course .dessert .dessert_text, .menus .menu_dessert .starter .starter_text, .menus .menu_dessert .starter .main_course_text, .menus .menu_dessert .starter .dessert_text, .menus .menu_dessert .main_course .starter_text, .menus .menu_dessert .main_course .main_course_text, .menus .menu_dessert .main_course .dessert_text, .menus .menu_dessert .dessert .starter_text, .menus .menu_dessert .dessert .main_course_text, .menus .menu_dessert .dessert .dessert_text {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding-left: 10px;
-  width: 90%;
   min-width: 90%;
 }
 .menus .menu_starter .starter .starter_text h3, .menus .menu_starter .starter .main_course_text h3, .menus .menu_starter .starter .dessert_text h3, .menus .menu_starter .main_course .starter_text h3, .menus .menu_starter .main_course .main_course_text h3, .menus .menu_starter .main_course .dessert_text h3, .menus .menu_starter .dessert .starter_text h3, .menus .menu_starter .dessert .main_course_text h3, .menus .menu_starter .dessert .dessert_text h3, .menus .menu_main_course .starter .starter_text h3, .menus .menu_main_course .starter .main_course_text h3, .menus .menu_main_course .starter .dessert_text h3, .menus .menu_main_course .main_course .starter_text h3, .menus .menu_main_course .main_course .main_course_text h3, .menus .menu_main_course .main_course .dessert_text h3, .menus .menu_main_course .dessert .starter_text h3, .menus .menu_main_course .dessert .main_course_text h3, .menus .menu_main_course .dessert .dessert_text h3, .menus .menu_dessert .starter .starter_text h3, .menus .menu_dessert .starter .main_course_text h3, .menus .menu_dessert .starter .dessert_text h3, .menus .menu_dessert .main_course .starter_text h3, .menus .menu_dessert .main_course .main_course_text h3, .menus .menu_dessert .main_course .dessert_text h3, .menus .menu_dessert .dessert .starter_text h3, .menus .menu_dessert .dessert .main_course_text h3, .menus .menu_dessert .dessert .dessert_text h3 {
@@ -397,7 +395,7 @@ body a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
+  justify-items: right;
 }
 .menus .menu_starter .starter .basket .price p, .menus .menu_starter .main_course .basket .price p, .menus .menu_starter .dessert .basket .price p, .menus .menu_main_course .starter .basket .price p, .menus .menu_main_course .main_course .basket .price p, .menus .menu_main_course .dessert .basket .price p, .menus .menu_dessert .starter .basket .price p, .menus .menu_dessert .main_course .basket .price p, .menus .menu_dessert .dessert .basket .price p {
   width: 20px;
@@ -486,8 +484,19 @@ footer .link_notice, footer .link_contact {
   margin-bottom: 10px;
 }
 
+/* Responsive Mobile */
+@media screen and (min-width: 530px) and (max-width: 650px) {
+  .basket {
+    margin-left: 1em;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 768px) {
+  .basket {
+    margin-left: 1.8em;
+  }
+}
 /* Responsive Tablet */
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .logo img {
     width: 35%;
     height: 28px;
@@ -643,7 +652,7 @@ footer .link_notice, footer .link_contact {
   }
 }
 /* Responsive Desktop */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 993px) {
   .logo img {
     width: 25%;
     height: 28px;
