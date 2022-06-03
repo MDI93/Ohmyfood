@@ -140,7 +140,6 @@ body a {
   font-size: 16px;
   width: 85%;
   padding: 20px 0px;
-  border: 1px solid #F6F6F6;
   border-radius: 20px;
   background: #F6F6F6;
   margin: 12px;
@@ -375,6 +374,7 @@ body a {
   flex-direction: column;
   justify-content: flex-end;
   padding-left: 10px;
+  overflow: hidden;
   min-width: 90%;
 }
 .menus .menu_starter .starter .starter_text h3, .menus .menu_starter .starter .main_course_text h3, .menus .menu_starter .starter .dessert_text h3, .menus .menu_starter .main_course .starter_text h3, .menus .menu_starter .main_course .main_course_text h3, .menus .menu_starter .main_course .dessert_text h3, .menus .menu_starter .dessert .starter_text h3, .menus .menu_starter .dessert .main_course_text h3, .menus .menu_starter .dessert .dessert_text h3, .menus .menu_main_course .starter .starter_text h3, .menus .menu_main_course .starter .main_course_text h3, .menus .menu_main_course .starter .dessert_text h3, .menus .menu_main_course .main_course .starter_text h3, .menus .menu_main_course .main_course .main_course_text h3, .menus .menu_main_course .main_course .dessert_text h3, .menus .menu_main_course .dessert .starter_text h3, .menus .menu_main_course .dessert .main_course_text h3, .menus .menu_main_course .dessert .dessert_text h3, .menus .menu_dessert .starter .starter_text h3, .menus .menu_dessert .starter .main_course_text h3, .menus .menu_dessert .starter .dessert_text h3, .menus .menu_dessert .main_course .starter_text h3, .menus .menu_dessert .main_course .main_course_text h3, .menus .menu_dessert .main_course .dessert_text h3, .menus .menu_dessert .dessert .starter_text h3, .menus .menu_dessert .dessert .main_course_text h3, .menus .menu_dessert .dessert .dessert_text h3 {
@@ -384,13 +384,15 @@ body a {
   font-weight: 500;
   margin-bottom: 5px;
   text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menus .menu_starter .starter .starter_text p, .menus .menu_starter .starter .main_course_text p, .menus .menu_starter .starter .dessert_text p, .menus .menu_starter .main_course .starter_text p, .menus .menu_starter .main_course .main_course_text p, .menus .menu_starter .main_course .dessert_text p, .menus .menu_starter .dessert .starter_text p, .menus .menu_starter .dessert .main_course_text p, .menus .menu_starter .dessert .dessert_text p, .menus .menu_main_course .starter .starter_text p, .menus .menu_main_course .starter .main_course_text p, .menus .menu_main_course .starter .dessert_text p, .menus .menu_main_course .main_course .starter_text p, .menus .menu_main_course .main_course .main_course_text p, .menus .menu_main_course .main_course .dessert_text p, .menus .menu_main_course .dessert .starter_text p, .menus .menu_main_course .dessert .main_course_text p, .menus .menu_main_course .dessert .dessert_text p, .menus .menu_dessert .starter .starter_text p, .menus .menu_dessert .starter .main_course_text p, .menus .menu_dessert .starter .dessert_text p, .menus .menu_dessert .main_course .starter_text p, .menus .menu_dessert .main_course .main_course_text p, .menus .menu_dessert .main_course .dessert_text p, .menus .menu_dessert .dessert .starter_text p, .menus .menu_dessert .dessert .main_course_text p, .menus .menu_dessert .dessert .dessert_text p {
   font-size: 15px;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
   opacity: 60%;
+  white-space: nowrap;
 }
 .menus .menu_starter .starter .basket, .menus .menu_starter .main_course .basket, .menus .menu_starter .dessert .basket, .menus .menu_main_course .starter .basket, .menus .menu_main_course .main_course .basket, .menus .menu_main_course .dessert .basket, .menus .menu_dessert .starter .basket, .menus .menu_dessert .main_course .basket, .menus .menu_dessert .dessert .basket {
   display: flex;
@@ -625,6 +627,9 @@ footer .link_notice, footer .link_contact {
   .menus .menu_starter .starter, .menus .menu_starter .main_course, .menus .menu_starter .dessert, .menus .menu_main_course .starter, .menus .menu_main_course .main_course, .menus .menu_main_course .dessert, .menus .menu_dessert .starter, .menus .menu_dessert .main_course, .menus .menu_dessert .dessert {
     width: 60%;
   }
+  .menus .menu_starter .starter .basket .starter_text h3, .menus .menu_starter .starter .basket .main_course_text h3, .menus .menu_starter .starter .basket .dessert_text h3, .menus .menu_starter .main_course .basket .starter_text h3, .menus .menu_starter .main_course .basket .main_course_text h3, .menus .menu_starter .main_course .basket .dessert_text h3, .menus .menu_starter .dessert .basket .starter_text h3, .menus .menu_starter .dessert .basket .main_course_text h3, .menus .menu_starter .dessert .basket .dessert_text h3, .menus .menu_main_course .starter .basket .starter_text h3, .menus .menu_main_course .starter .basket .main_course_text h3, .menus .menu_main_course .starter .basket .dessert_text h3, .menus .menu_main_course .main_course .basket .starter_text h3, .menus .menu_main_course .main_course .basket .main_course_text h3, .menus .menu_main_course .main_course .basket .dessert_text h3, .menus .menu_main_course .dessert .basket .starter_text h3, .menus .menu_main_course .dessert .basket .main_course_text h3, .menus .menu_main_course .dessert .basket .dessert_text h3, .menus .menu_dessert .starter .basket .starter_text h3, .menus .menu_dessert .starter .basket .main_course_text h3, .menus .menu_dessert .starter .basket .dessert_text h3, .menus .menu_dessert .main_course .basket .starter_text h3, .menus .menu_dessert .main_course .basket .main_course_text h3, .menus .menu_dessert .main_course .basket .dessert_text h3, .menus .menu_dessert .dessert .basket .starter_text h3, .menus .menu_dessert .dessert .basket .main_course_text h3, .menus .menu_dessert .dessert .basket .dessert_text h3 {
+    width: 80%;
+  }
   .menus .menu_starter .starter .basket .add_basket, .menus .menu_starter .main_course .basket .add_basket, .menus .menu_starter .dessert .basket .add_basket, .menus .menu_main_course .starter .basket .add_basket, .menus .menu_main_course .main_course .basket .add_basket, .menus .menu_main_course .dessert .basket .add_basket, .menus .menu_dessert .starter .basket .add_basket, .menus .menu_dessert .main_course .basket .add_basket, .menus .menu_dessert .dessert .basket .add_basket {
     padding: 30px 50px;
   }
@@ -827,7 +832,6 @@ footer .link_notice, footer .link_contact {
     font-size: 1.3rem;
   }
   .menus .dishes .menu_starter .starter .starter_text p, .menus .dishes .menu_starter .starter .main_course_text p, .menus .dishes .menu_starter .starter .dessert_text p, .menus .dishes .menu_starter .main_course .starter_text p, .menus .dishes .menu_starter .main_course .main_course_text p, .menus .dishes .menu_starter .main_course .dessert_text p, .menus .dishes .menu_starter .dessert .starter_text p, .menus .dishes .menu_starter .dessert .main_course_text p, .menus .dishes .menu_starter .dessert .dessert_text p, .menus .dishes .menu_main_course .starter .starter_text p, .menus .dishes .menu_main_course .starter .main_course_text p, .menus .dishes .menu_main_course .starter .dessert_text p, .menus .dishes .menu_main_course .main_course .starter_text p, .menus .dishes .menu_main_course .main_course .main_course_text p, .menus .dishes .menu_main_course .main_course .dessert_text p, .menus .dishes .menu_main_course .dessert .starter_text p, .menus .dishes .menu_main_course .dessert .main_course_text p, .menus .dishes .menu_main_course .dessert .dessert_text p, .menus .dishes .menu_dessert .starter .starter_text p, .menus .dishes .menu_dessert .starter .main_course_text p, .menus .dishes .menu_dessert .starter .dessert_text p, .menus .dishes .menu_dessert .main_course .starter_text p, .menus .dishes .menu_dessert .main_course .main_course_text p, .menus .dishes .menu_dessert .main_course .dessert_text p, .menus .dishes .menu_dessert .dessert .starter_text p, .menus .dishes .menu_dessert .dessert .main_course_text p, .menus .dishes .menu_dessert .dessert .dessert_text p {
-    width: 90%;
     font-size: 17px;
     padding-left: 20px;
   }
@@ -892,7 +896,7 @@ footer .link_notice, footer .link_contact {
     background: #9356DC;
   }
 }
-body {
+#loader {
   animation: background-loader 2500ms forwards ease-out;
 }
 
@@ -989,11 +993,21 @@ body {
   transition: transform 800ms;
 }
 
-.basket:hover {
+.starter_text {
+  transition: width 4s ease-in-out;
+}
+
+.starter:hover .basket, .main_course:hover .basket, .dessert:hover .basket {
   transform: translate(-6em, 0);
 }
-.basket:hover .add {
+.starter:hover .add, .main_course:hover .add, .dessert:hover .add {
   transform: rotate(360deg);
+}
+.starter:hover .starter_text p, .starter:hover .main_course_text p, .starter:hover .dessert_text p, .main_course:hover .starter_text p, .main_course:hover .main_course_text p, .main_course:hover .dessert_text p, .dessert:hover .starter_text p, .dessert:hover .main_course_text p, .dessert:hover .dessert_text p {
+  width: 70%;
+}
+.starter:hover .starter_text h3, .starter:hover .main_course_text h3, .starter:hover .dessert_text h3, .main_course:hover .starter_text h3, .main_course:hover .main_course_text h3, .main_course:hover .dessert_text h3, .dessert:hover .starter_text h3, .dessert:hover .main_course_text h3, .dessert:hover .dessert_text h3 {
+  width: 70%;
 }
 
 /*# sourceMappingURL=style.css.map */

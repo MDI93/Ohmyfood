@@ -50,7 +50,7 @@
       background: $color-primary;
     }
   }
-body{
+#loader {
     animation: background-loader 2500ms forwards ease-out;
 }
 @keyframes background-loader {
@@ -148,9 +148,20 @@ body{
 .basket {
   transition: transform 800ms;
 }
-.basket:hover {
-  transform: translate(-6em,0);
+.starter_text {
+  transition: width 4s ease-in-out;
+}
+.starter:hover, .main_course:hover, .dessert:hover {
+  .basket {
+    transform: translate(-6em,0);
+  }
   .add {
     transform: rotate(360deg);
+  }
+  .starter_text p, .main_course_text p, .dessert_text p {
+    width: 70%;
+  }
+  .starter_text h3, .main_course_text h3, .dessert_text h3 {
+    width: 70%;
   }
 }

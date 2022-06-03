@@ -136,6 +136,11 @@
             .starter, .main_course, .dessert {
                 width: 60%;
                 .basket { 
+                    .starter_text, .main_course_text, .dessert_text {
+                        h3 {
+                            width: 80%;
+                        }
+                    }
                     .add_basket {
                         padding: 30px 50px;
                     }
@@ -321,7 +326,6 @@
                             font-size: 1.3rem;
                         }
                         p {
-                            width: 90%;
                             font-size: 17px;
                             padding-left: 20px;
                         }
