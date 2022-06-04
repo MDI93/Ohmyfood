@@ -177,7 +177,7 @@ body a {
 }
 #choose_your_food .orders .order:hover i {
   color: #9356DC;
-  opacity: 160%;
+  opacity: 1;
 }
 
 /* Cards of place */
@@ -620,9 +620,6 @@ footer .link_notice, footer .link_contact {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  .menus .menu_starter h2, .menus .menu_main_course h2, .menus .menu_dessert h2 {
-    order: flex-start;
   }
   .menus .menu_starter .starter, .menus .menu_starter .main_course, .menus .menu_starter .dessert, .menus .menu_main_course .starter, .menus .menu_main_course .main_course, .menus .menu_main_course .dessert, .menus .menu_dessert .starter, .menus .menu_dessert .main_course, .menus .menu_dessert .dessert {
     width: 60%;
