@@ -67,12 +67,19 @@
     }
     .menu_starter, .menu_main_course, .menu_dessert {
         h2 {
+            position: relative;
             @include second_title;
             font-weight: 300;
             padding-top: 10px;
             padding-left: 0;
             font-size: 1.0rem;
             margin-left: 15px;
+        }
+        h2::after {
+            content:"";
+            bottom: 0;
+            left: 0;
+            position: absolute;
             @include border-btm;
         }
         .starter, .main_course, .dessert {

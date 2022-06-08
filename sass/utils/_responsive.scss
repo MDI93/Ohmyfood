@@ -1,5 +1,46 @@
 /* Responsive Mobile */
 
+@media screen and (max-width: 376px) {
+    /* Accueil */
+    .location {
+        p{
+            width: 45%;
+        }
+    }
+    .cards{
+        .new {
+            padding: 6px 6px!important;
+        } 
+    }    
+    
+    /* Menus */
+    .restaurant_name {
+        h1 {
+            font-size: 1.4rem!important;
+            }
+    }
+    .starter, .main_course, .dessert {
+        .starter_text, .main_course_text, .dessert_text {
+            h3 {
+                font-size: 1rem!important;
+                max-width: 90%!important;
+            }
+            p {
+                font-size: 13px!important;
+                max-width: 90%!important;
+            }
+        }
+    }    
+    .starter:hover, .main_course:hover, .dessert:hover {
+        .starter_text p, .main_course_text p, .dessert_text p {
+          width: 55%!important;
+        }
+        .starter_text h3, .main_course_text h3, .dessert_text h3 {
+          width: 55%!important;
+        }
+    }
+}
+
 @media screen and (min-width: 530px) and (max-width: 650px) {
     .basket { 
         margin-left: 1em;

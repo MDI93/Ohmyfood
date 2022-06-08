@@ -340,6 +340,7 @@ body a {
   padding-left: 25px;
 }
 .menus .menu_starter h2, .menus .menu_main_course h2, .menus .menu_dessert h2 {
+  position: relative;
   font-weight: bold;
   width: 70%;
   margin: 0px;
@@ -351,7 +352,13 @@ body a {
   padding-left: 0;
   font-size: 1rem;
   margin-left: 15px;
-  width: 45px;
+}
+.menus .menu_starter h2::after, .menus .menu_main_course h2::after, .menus .menu_dessert h2::after {
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 40px;
   border-bottom: solid #99E2D0;
 }
 .menus .menu_starter .starter, .menus .menu_starter .main_course, .menus .menu_starter .dessert, .menus .menu_main_course .starter, .menus .menu_main_course .main_course, .menus .menu_main_course .dessert, .menus .menu_dessert .starter, .menus .menu_dessert .main_course, .menus .menu_dessert .dessert {
@@ -488,6 +495,37 @@ footer .link_notice, footer .link_contact {
 }
 
 /* Responsive Mobile */
+@media screen and (max-width: 376px) {
+  /* Accueil */
+  .location p {
+    width: 45%;
+  }
+
+  .cards .new {
+    padding: 6px 6px !important;
+  }
+
+  /* Menus */
+  .restaurant_name h1 {
+    font-size: 1.4rem !important;
+  }
+
+  .starter .starter_text h3, .starter .main_course_text h3, .starter .dessert_text h3, .main_course .starter_text h3, .main_course .main_course_text h3, .main_course .dessert_text h3, .dessert .starter_text h3, .dessert .main_course_text h3, .dessert .dessert_text h3 {
+    font-size: 1rem !important;
+    max-width: 90% !important;
+  }
+  .starter .starter_text p, .starter .main_course_text p, .starter .dessert_text p, .main_course .starter_text p, .main_course .main_course_text p, .main_course .dessert_text p, .dessert .starter_text p, .dessert .main_course_text p, .dessert .dessert_text p {
+    font-size: 13px !important;
+    max-width: 90% !important;
+  }
+
+  .starter:hover .starter_text p, .starter:hover .main_course_text p, .starter:hover .dessert_text p, .main_course:hover .starter_text p, .main_course:hover .main_course_text p, .main_course:hover .dessert_text p, .dessert:hover .starter_text p, .dessert:hover .main_course_text p, .dessert:hover .dessert_text p {
+    width: 55% !important;
+  }
+  .starter:hover .starter_text h3, .starter:hover .main_course_text h3, .starter:hover .dessert_text h3, .main_course:hover .starter_text h3, .main_course:hover .main_course_text h3, .main_course:hover .dessert_text h3, .dessert:hover .starter_text h3, .dessert:hover .main_course_text h3, .dessert:hover .dessert_text h3 {
+    width: 55% !important;
+  }
+}
 @media screen and (min-width: 530px) and (max-width: 650px) {
   .basket {
     margin-left: 1em;
